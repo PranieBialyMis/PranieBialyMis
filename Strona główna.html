@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Strona główna</title>
+	<link rel="stylesheet" href="style.css"
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel="stylesheet">
+<style>
+	/* Reset stylów */
+* {
+	font-family:'Lexend Deca', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Styl nagłówka */
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 40px;
+	background-color: #f2f2f2;
+}
+
+/* Styl logo */
+.logo a {
+	font-size: 24px;
+	font-weight: bold;
+	color: #333;
+	text-decoration: none;
+}
+
+/* Styl nawigacji */
+nav ul {
+	display: flex;
+}
+
+nav li {
+	padding-right: 20px;
+	margin-left: 60px;
+	list-style: none;
+}
+
+nav a {
+	font-size: 20px;
+	color: #333;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #0077b5;
+}
+
+/* Styl sekcji głównej */
+main {
+	padding: 50px;
+	margin:10px;
+	text-align: left;
+}
+
+
+/* Styl stopki */
+footer {
+	padding: 20px;
+	text-align: center;
+	background-color: #f2f2f2;
+	color: #999;
+	font-size: 14px;
+}
+p1 {
+	font-size:25px;
+	}
+p2 {
+text-align: left;
+font-size: 20px;
+}
+h1 {
+margin-bottom: 5px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  padding-left: 100px;
+  
+}
+
+.image {
+  margin-right: 10px;
+
+
+}
+img {
+    width: 300px;
+}
+
+
+</style>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<a href="#">Logo</a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="Strona główna.html">Strona główna</a></li>
+				<li><a href="Oferta.html">Oferta</a></li>
+				<li><a href="Cennik.html">Cennik</a></li>
+				<li><a href="Pytania.html">Pytania</a></li>
+				<li><a href="Kontakt.html">Kontakt</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+	<div class="container">
+		<div class="text">
+		<h1>Pranie mebli Biały Miś<br></h1>
+		<p1>Dokładnie, skutecznie i pod ręką</p1><br>
+		<p2>
+			Oferujemy pranie mebli w krótkim czasie,
+			z zachowaniem jakości i<br>skutecznym usunięciem
+			uporczywych plam i zanieczyszczeń.
+			<br>Dzięki naszym usługom możesz w prosty sposób odświeżyć swój dom.
+			<br>Pranie mebli nie musi być ani drogie ani czasochłonne.
+			<br>Dzięki temu twoje meble będą wyglądały jak nowe,
+			a Ty zaoszczędzisz czas i pieniądze.<br>
+			</p2>
+		</div>
+		<div class="images">
+			<div class="image"><img src="Rysunki/Miś.jpg"/></div>
+			<div class="image"><img src="Rysunki/Strzałka.jpg"></div>
+			<div class="image"><img src="Rysunki/Telefon.jpg"></div>
+			
+	</main>
+	
+
+	<footer>
+		<p> Pranie Biały Miś +48 519 551 915</p>
+	</footer>
+</body>
+</html>
