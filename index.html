@@ -16,6 +16,10 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+*{
+  padding: 0;
+  margin: 0;
+}
 
 /* Styl nagłówka */
 header {
@@ -70,16 +74,22 @@ footer {
 	background-color: #f2f2f2;
 	color: #999;
 	font-size: 14px;
+	con
 }
 p1 {
-	font-size:25px;
+	font-size:200%;
 	}
 p2 {
 text-align: left;
-font-size: 20px;
+font-size: 150%;
+margin-bottom: 15px;
+}
+p4{
+	font-size: 30px;
 }
 h1 {
 margin-bottom: 5px;
+font-size: 300%;
 }
 
 .container {
@@ -90,6 +100,8 @@ margin-bottom: 5px;
 .text {
   display: flex;
   flex-direction: column;
+  margin-left: 5%;
+  margin-top: 3%;
 }
 
 .images {
@@ -107,7 +119,110 @@ margin-bottom: 5px;
 img {
     width: 300px;
 }
+button {
+	font-size: 20px;
+	margin-right: 6%;
+	margin-left: 0px;
+	margin-top: 40px;
+}
 
+/* CSS */
+button {
+  appearance: button;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 10px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: din-round,sans-serif;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  outline: none;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+button:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+button:focus {
+  user-select: auto;
+}
+
+button:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+button:disabled {
+  cursor: auto;
+}
+span {
+	width: 100%;
+	height: 40%;
+	background-color: #0077b5;
+}
+table {
+            background-color:rgb(207, 242, 253);
+            width: 70%;
+            margin: 2% auto;
+            font-size: 25px;
+            border-radius: 15px;
+        }
+        td {
+            padding: 20px 20px 20px 20px;
+			
+        }
+        th {
+            font-size:20px;
+            padding: 30px 30px 30px 20px;
+        }
+        .komórka:hover {
+            background-color:rgb(255, 255, 255);
+            
+        }
+        img {
+            width: 120px;
+            height: 120px;
+        }
+      
+
+        li:hover {
+            color:  #02c4ff;
+			
+        
+        }
+      
+        .tabelka {
+            margin-left: auto;
+            margin-right: auto;
+			text-align: center;
+        }
+		.komórka:hover {
+			color: #00acca;
+		}
+		
 
 </style>
 </head>
@@ -118,7 +233,7 @@ img {
 		</div>
 		<nav>
 			<ul>
-				<li><a href="Strona główna.html">Strona główna</a></li>
+				<li><a href="index.html">Strona główna</a></li>
 				<li><a href="Oferta.html">Oferta</a></li>
 				<li><a href="Cennik.html">Cennik</a></li>
 				<li><a href="Pytania.html">Pytania</a></li>
@@ -131,23 +246,124 @@ img {
 	<div class="container">
 		<div class="text">
 		<h1>Pranie mebli Biały Miś<br></h1>
-		<p1>Dokładnie, skutecznie i pod ręką</p1><br>
+		<p1> Jesteśmy zawsze, gdy nas potrzebujesz.</p1><br>
 		<p2>
-			Oferujemy pranie mebli w krótkim czasie,
-			z zachowaniem jakości i<br>skutecznym usunięciem
-			uporczywych plam i zanieczyszczeń.
-			<br>Dzięki naszym usługom możesz w prosty sposób odświeżyć swój dom.
-			<br>Pranie mebli nie musi być ani drogie ani czasochłonne.
-			<br>Dzięki temu twoje meble będą wyglądały jak nowe,
-			a Ty zaoszczędzisz czas i pieniądze.<br>
-			</p2>
+			Oferujemy usługi prania mebli, aby poprawić jakość twojego domu i środowiska.
+			<br>Dzięki naszej współpracy w prosty sposób zadbasz o czystość  z pewnością o najlepszą jakość.
+			<br>Specjalizujemy się w praniu tapicerki meblowej na terenie Warszawy i okolicznych miejscowości.
+			<br>Sprzątanie nie musi czekać, gdy masz pod ręką Białego Misia. Skontaktuj się z nami już dziś!
+			</p2><br>
+			<p3><button>Spawdź nasz DOJAZD</button><button> Zobacz CENNIK</button> <button>Zamów PRANIE TAPICERKI</button></p3>
+			<br><br><br><p4></p4>
 		</div>
 		<div class="images">
-			<div class="image"><img src="Rysunki/Misiek.jpg"/></div>
+			<div class="image"><img src="Rysunki/Miś.jpg"/></div>
 			<div class="image"><img src="Rysunki/Strzałka.jpg"></div>
 			<div class="image"><img src="Rysunki/Telefon.jpg"></div>
-			
+	</div>
 	</main>
+	<table class="tabelka">
+		<tr class="nagłówek">
+			<th>Oferta prania</th>
+			<th></th>
+			<th>Cena</th>
+		</tr>
+		<tr class="komórka">
+		<td><img src="ikonki mebli/Krzesło bez oparcia.png"> </td>
+		<td> Krzesło bez oparcia</td>
+		<td> 10 zł</td>
+		</tr>
+		<tr class="komórka">
+		<td> <img src="ikonki mebli/Krzesło.png"></td>
+		<td> Krzesło z oparciem </td>
+		<td> 15 zł</td>
+		</tr>
+		<tr class="komórka">
+		<td><img src="ikonki mebli/Krzesło biurowe.png"> </td>
+		<td> Krzesło biurowe</td>
+		<td> 20 zł</td>
+		</tr>
+		<tr class="komórka">
+			<td><img src="ikonki mebli/Naroznik mały.png"></td>
+			<td>Mały narożnik</td>
+			<td>120 zł</td>
+		</tr>
+		<tr class="komórka">
+			<td><img src="ikonki mebli/Naroznik duży.png"></td>
+			<td>Duży narożnik</td>
+			<td>150 zł</td>
+		</tr>
+		<tr class="komórka">
+			<td><img src="ikonki mebli/Kanapa 2osobowa.png"></td>
+			<td>Kanapa 2-osobowa</td>
+			<td>90 zł</td>
+		</tr>
+		<tr class="komórka">
+			<td><img src="ikonki mebli/Kanapa 3osobowa.png"></td>
+			<td>Kanapa 3-osobowa</td>
+			<td>120 zł</td>
+		</tr>
+		<tr class="komórka">
+			<td><img src="ikonki mebli/Wersalka.png"></td>
+			<td>Wersalka</td>
+			<td>90 zł</td>
+		</tr>
+		<tr class="komórka">
+			<td><img src="ikonki mebli/Poduszka.png"></td>
+			<td>Poduszka</td>
+			<td>8 zł</td>
+		</tr>
+		<tr class="komórka">
+			<td><img src="ikonki mebli/Puf.png"></td>
+			<td>Pufa, podnóżek</td>
+			<td>15 zł</td>
+		</tr>
+		<tr class="komórka">
+			<td><img src="ikonki mebli/Mały fotel.png"></td>
+			<td>Mały fotel</td>
+			<td>40 zł</td>
+		</tr>
+		<tr class="komórka">
+			<td><img src="ikonki mebli/Duży fotel.png"></td>
+			<td>Duży fotel</td>
+			<td>70 zł</td>
+		</tr>
+		<tr class="komórka">
+			<td><img src="ikonki mebli/Materac.png"></td>
+			<td> Materac 1-osobowy</td>
+			<td><p>60 zł za 1 stronę</p>
+			<p>110 zł za 2 strony</p></td>
+		</tr>
+		<tr class="komórka">
+			<td><img src="ikonki mebli/Materac.png"></td>
+			<td> Materac 2-osobowy</td>
+			<td><p>70 zł za 1 stronę</p>
+				<p>120 zł za 2 strony</p></td>
+		</tr>
+		<tr class="komórka">
+			<td><img src="ikonki mebli/Fotelik.png"></td>
+			<td>Fotelik samochodowy</td>
+			<td>50 zł</td>
+		</tr>
+		<tr class="komórka">
+			<td><img src="ikonki mebli/Wózek dziecięcy.png"></td>
+			<td>Wózek dziecięcy</td>
+			<td>60 zł</td>
+		</tr>
+		<tr class="komórka">
+			<td><img src="ikonki mebli/Dywan.png"></td>
+			<td>Dywan</td>
+			<td><p>od 6 zł/m2 do 18 zł/m2</p>
+			<p>cena indywidualna</p>
+			</td>
+		</tr>
+	   
+	
+		</table>
+
+	
+	</div>	
+	<span><p5></p5></span>
 	
 
 	<footer>
