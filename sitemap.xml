@@ -1,22 +1,29 @@
-<urlset xmlns="https://www.google.com/schemas/sitemap/0.84"> 
+<?xml version="1.0" encoding="UFT-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
 <url>
 <loc>https://praniebialymis.pl/</loc>
-<lastmod>2023-05-03T15:03:21+00:00</lastmod>
+<lastmod>2023-04-02T11:57:19+00:00</lastmod>
 <priority>1.00</priority>
 </url>
 <url>
 <loc>https://praniebialymis.pl/index.html</loc>
-<lastmod>2023-05-03T15:03:21+00:00</lastmod>
+<lastmod>2023-04-02T11:57:19+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://praniebialymis.pl/Cennik.html</loc>
+<lastmod>2023-04-02T11:57:19+00:00</lastmod>
 <priority>0.80</priority>
 </url>
 <url>
 <loc>https://praniebialymis.pl/Pytania.html</loc>
-<lastmod>2023-05-03T15:03:21+00:00</lastmod>
+<lastmod>2023-04-02T11:57:19+00:00</lastmod>
 <priority>0.80</priority>
 </url>
 <url>
 <loc>https://praniebialymis.pl/Kontakt.html</loc>
-<lastmod>2023-05-03T15:03:21+00:00</lastmod>
+<lastmod>2023-04-02T11:57:19+00:00</lastmod>
 <priority>0.80</priority>
 </url>
 </urlset>
