@@ -18,47 +18,184 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&family=Lexend+Deca:wght@500;700;800&display=swap" rel="stylesheet">
         <style>
-            @media all (min-width: 500px)
-    {
-header { 
-    font-size: 3rem;
+		
+/* 2xl */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+  header {
+    font-size: 1.8rem ;
+  }
+  li, ul {
+    margin-left: 1.6rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-right: 1.6rem ;
+    padding-left: 1.6rem;
+  }
 }
-    }
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+  header {
+    font-size: 1.6rem ;
+  }
+  li, ul {
+    margin-left: 1.2rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-right: 1.2rem ;
+    padding-left: 1.2rem;
+    border-radius: 0.5rem;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+  header {
+    font-size: 1.4rem ;
+  }
+  li, ul {
+    margin-left: 1.0rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    padding-right: 0.8rem ;
+    padding-left: 0.8rem;
+    border-radius: 0.4rem;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+  header {
+    font-size: 1.2rem ;
+  }
+  li, ul {
+    margin-left: 0.8rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-right: 0.6rem ;
+    padding-left: 0.6rem;
+    border-radius: 0.3rem;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+  header {
+    font-size: 1.0rem ;
+  }
+  li, ul {
+    margin-left: 0.6rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    padding-right: 0.4rem ;
+    padding-left: 0.4rem;
+    border-radius: 0.3rem;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+  header {
+    font-size: 0.9rem ;
+  }
+  li, ul {
+    margin-left: 0.4rem;
+    padding-top: 0.0rem;
+    padding-bottom: 0.0rem;
+    padding-right: 0.2rem ;
+    padding-left: 0.2rem;
+    border-radius: 0.2rem;
+  }
+}
+/* xxs */
+@media (max-width: 360px) {
+  .container {
+    width: 100%;
+  }
+  header {
+    font-size: 0.8rem ;
+  }
+  li, ul {
+    margin-left: 0.2rem;
+    padding-top: 0.0rem;
+    padding-bottom: 0.0rem;
+    padding-right: 0.2rem ;
+    padding-left: 0.2rem;
+    border-radius: 0.2rem;
+  }
+}
+
+.container {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 header {
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    border-radius: 0;
-    width: 100% ;
-    z-index: 1;
-    font-size: 2rem ;
-    align-items: center;
-    justify-content: space-between;
-    font-family: lexend deca;
-    background-color: #F2F2F2;
-    
-}
+display: flex;
+flex-direction: row;
+position: fixed;
+top: 0px;
+left: 0px;
+border-radius: 0;
+width: 100% ;
+z-index: 1;
+font-size: 2rem;
+align-items: center;
+justify-content: space-between;
+font-family: oswald; 
+background-color: rgb(242, 242, 242, 0.6);
 
-header li, ul {
-	list-style: none;
-    display: flex;
-    margin-left: 2rem;
-    margin-right: 2rem;
 }
-
 header a {
 	color: #333;
 	text-decoration: none;
 }
 
 header a:hover {
-	color: #0077b5;
+    color: #00439b;
+    
 }
-li a:hover {
 
+li, ul {
+	list-style: none;
+    display: flex;
+    margin-left: 2rem;
+    border-radius: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 2rem ;
+    padding-left: 2rem;
 }
+li {
+    background-color: #ffffff;
+}
+li:hover 
+    {
+        background-color: #9fc6f8;
+        color: #004094;
+        transition: .6s;
+    }
 
 .wizytówka {
     display: table;
@@ -390,7 +527,9 @@ footer {
 }
         </style>
     </head>
+<div class="container">
 <body>
+    
     <header>
 		<div class="logo">
 			<a href="#">Logo</a>
@@ -405,6 +544,7 @@ footer {
 			</ul>
 		</nav>
 	</header>
+</div>
     <div class="wizytówka">
         <h1><span style="color: #0077B5; font-weight:700;">Profesjonalne</span> pranie tapicerki meblowej<br>
                 na terenie Warszawy i okolic.</h1>
