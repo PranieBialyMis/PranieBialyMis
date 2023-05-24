@@ -1,26 +1,328 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link href='https://fonts.googleapis.com/css?family=Lexend Deca|Lexend Deca|Lexend:300,400,500,700,900"' rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Golos+Text&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&family=Lexend+Deca:wght@500&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&family=Lexend+Deca:wght@500;700&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&family=Lexend+Deca:wght@500;700;800&display=swap" rel="stylesheet">
-	    <link href='https://fonts.googleapis.com/css?family=Lexend Deca|Lexend Deca|Lexend:300,400,500,700,900"' rel="stylesheet">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Lexend Deca|Lexend Deca|Lexend:300,400,500,700,900"' rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-        <style>
-		
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+
+.container {
+  max-width: 1536px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+position: sticky;
+display: flex;
+flex-direction: row;
+top: 0px;
+left: 0px;
+border-radius: 0;
+width: 100% ;
+z-index: 1;
+font-size: 2rem;
+align-items: center;
+justify-content: space-between;
+font-family: oswald; 
+background-color: rgb(242, 242, 242, 0.8);
+
+}
+header a {
+	color: #333;
+	text-decoration: none;
+}
+
+header a:hover {
+    color: #007da3;
+    
+}
+
+li, ul {
+	list-style: none;
+    display: flex;
+    margin-left: 2rem;
+    border-radius: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 2rem ;
+    padding-left: 2rem;
+}
+li {
+    background-color: #ffffff;
+}
+li:hover 
+    {
+    background-color: #02c4ff;
+    transition: .6s;
+    }
+
+.logo {
+    width: 5rem;
+    height: 5rem;
+    margin-top: ;
+    margin-left: rem;
+    margin-right: rem;   
+}
+.logonazwa {
+    display: flex;
+    flex-direction: ;
+    font-family: lexend deca;
+    font-weight: 600;
+    margin-left: rem;  
+}
+p8 {
+   position: absolute;
+
+}
+.wizytówka {
+    display: table;
+    align-items: center;
+    width: 80rem;
+    height: 38rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: #333;
+    margin-bottom: 7REM;
+
+    
+}
+.tło1 {
+    width: 80rem;
+    height: 38rem;
+    position: absolute;
+    z-index: -1;
+    border-radius: 20px;
+    opacity: 70%;
+}
+h1 {
+  
+    padding-left: 1rem ;
+    padding-right: 1rem ;
+    padding-top: 0.8rem;
+    padding-bottom: 0.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-color: rgb(2, 196, 255, 0.3);
+    border-radius: 0.8rem;
+    text-align: center;
+    font-size: 3rem ;
+    font-family: lexend deca;
+}
+p {
+    
+    margin-left: 3.2rem;
+    margin-right: 3.2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem ;
+    padding-left: auto;
+    padding-right: auto;
+    font-size: 3rem;
+    line-height: 4rem;
+    font-family: oswald;
+    letter-spacing: 0.1rem;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 0.8rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 6rem;
+    
+}
+
+p:hover {
+    filter: brightness(1.2);
+  -webkit-filter: brightness(1.2);
+  -webkit-box-shadow: 0px 0px 64px -10px rgb(255, 255, 255);
+-moz-box-shadow: 0px 0px 64px -10px rgb(255, 255, 255);
+box-shadow: 0px 0px 64px -10px rgb(255, 255, 255);
+}
+button {
+    margin-top: 4.5rem;
+	font-size: 1.5REM;
+	margin-left: 4.4REM;
+}
+/* CSS */
+button {
+  appearance: button;
+  background-color: #00a7da;
+  border: solid transparent;
+  border-radius: 1rem;
+  border-width: 0 0 10px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: din-round,sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.125rem;
+  line-height: 1.25rem;
+  outline: none;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+button:after {
+  background-clip: padding-box;
+  background-color: #02c4ff;
+  border: solid transparent;
+  border-radius: 1rem;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+button:focus {
+  user-select: auto;
+}
+
+button:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+  -webkit-box-shadow: 0px 0px 64px -10px rgba(0, 119, 181, 1);
+-moz-box-shadow: 0px 0px 64px -10px rgba(0, 119, 181, 1);
+box-shadow: 0px 0px 64px -10px rgba(0, 119, 181, 1);
+}
+
+button:disabled {
+  cursor: auto;
+}
+
+
+.pracamis2 {
+    font-family: lexend deca;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    padding-right: 12rem ;
+    padding-left: 12rem;
+}
+.notka {
+    background-color: #FFFFFF;
+    margin-top: 4rem ;
+    margin-left: 1rem ;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    width: 24rem ;
+    height: 26rem;
+    padding-bottom: -1rem;
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem ;
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    align-items:baseline;
+    text-align: center;
+    line-height: 2.6rem;
+    border-width: 0.5rem;
+    border-style: dashed;
+    border-color: #00a7da;
+    
+}
+.notka:hover {
+    box-shadow: rgb(2, 196, 255, 0.6) 0rem 1rem 4rem -12px;
+} 
+.białe {
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: rem;
+    width: 80rem;
+    height: 221.5rem ;
+    background-color: white ;
+    border-width: 1.5rem;
+    border-style: solid;
+    border-color: rgb(207, 242, 253);
+    border-radius: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.znak1 {
+    width: 4rem;
+ 
+}
+.znak2 {
+    width: 6rem;
+   
+}
+.znak3 {
+    width: 5rem;
+    
+}
+
+.znak1, .znak2, .znak3 {
+margin-bottom: 1rem;
+}
+
+.tabelka {
+    text-align: center;
+}
+.komórka:hover {
+    color: #00acca;
+}
+table {
+    background-color:rgb(207, 242, 253);
+    border-radius: 15px;
+    font-family: lexend deca;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 4rem;
+    margin-top: 1.5rem;
+    margin-right: 1.5rem ;
+    margin-left: 1.5rem ;
+
+}
+th {
+    font-size: 2.4rem;
+    padding-top:3rem;
+    padding-bottom: 3rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    color: #333;
+    
+}
+td {
+    font-size:2rem ;
+    padding-top: 2rem ;
+    padding-bottom: 2rem ;
+    padding-right: 2rem ;
+    padding-left: 2rem;  
+}
+
+.komórka:hover {
+    background-color:rgb(255, 255, 255);
+    
+}
+.obrazek {
+    width: 7.5rem;
+    height: 7.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem ;
+}
+footer {
+	text-align: center;
+	background-color: #f2f2f2;
+	color: #999;
+    padding-top: 2rem;
+    margin-bottom: 0rem;
+    height:4rem;
+    font-size: 1.5rem;
+    font-family: lexend deca;
+    width: 100%;
+}
+
 /* 2xl */
 @media (max-width: 1536px) {
   .container {
@@ -145,399 +447,18 @@
   }
 }
 
-.container {
-  max-width: 1536px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-header {
-display: flex;
-flex-direction: row;
-position: fixed;
-top: 0px;
-left: 0px;
-border-radius: 0;
-width: 100% ;
-z-index: 1;
-font-size: 2rem;
-align-items: center;
-justify-content: space-between;
-font-family: oswald; 
-background-color: rgb(242, 242, 242, 0.6);
-
-}
-header a {
-	color: #333;
-	text-decoration: none;
-}
-
-header a:hover {
-    color: #00439b;
-    
-}
-
-li, ul {
-	list-style: none;
-    display: flex;
-    margin-left: 2rem;
-    border-radius: 0.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-right: 2rem ;
-    padding-left: 2rem;
-}
-li {
-    background-color: #ffffff;
-}
-li:hover 
-    {
-        background-color: #9fc6f8;
-        color: #004094;
-        transition: .6s;
-    }
-
-.wizytówka {
-    display: table;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10rem;
-    width: 85rem;
-    margin-right: auto;
-    margin-left: auto;
-    border-radius: 50px;
-    height: 36rem;
-    font-size: 1.5rem ;
-    font-family: lexend deca;
-}
-    .wizytówka {
-    background-color:rgb(0, 172, 202, 0.3);
-    color: #333;
-}
-h1 {
-    margin-right:;
-    margin-left: 8rem ;
-    margin-top: 5rem;
-}
-p {
-    margin-left: 8rem;
-    font-size: 2rem;
-    line-height: 3.5rem;
-    font-family: golos text;
-
-}
-button {
-	font-size: 1.5REM;
-	margin-right: 3REM;
-	margin-left: 2REM;
-}
-
-/* CSS */
-button {
-  appearance: button;
-  background-color: #1899D6;
-  border: solid transparent;
-  border-radius: 16px;
-  border-width: 0 0 10px;
-  color: #FFFFFF;
-  cursor: pointer;
-  font-family: din-round,sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.125rem;
-  line-height: 20px;
-  outline: none;
-  padding: 20px 30px;
-  text-transform: uppercase;
-  touch-action: manipulation;
-  transform: translateZ(0);
-  transition: filter .2s;
-  user-select: none;
-  -webkit-user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
-}
-
-button:after {
-  background-clip: padding-box;
-  background-color: #1CB0F6;
-  border: solid transparent;
-  border-radius: 16px;
-  border-width: 0 0 4px;
-  bottom: -4px;
-  content: "";
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: -1;
-}
-
-button:focus {
-  user-select: auto;
-}
-
-button:hover:not(:disabled) {
-  filter: brightness(1.1);
-  -webkit-filter: brightness(1.1);
-}
-
-button:disabled {
-  cursor: auto;
-}
-p1 {
-    margin-left: 8REM;
-}
-.czystymis {
-position: absolute;
-margin-top: -21rem;
-width: 24rem;
-}
-.slajdy2 {
-    display: table;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1.5rem ;
-    font-family: lexend deca;
-}
-h2, p2 {
-    text-align: center;
-}
-h2 {
-    margin-bottom: 0.75rem;
-}
-#slideshow {
-    overflow: hidden;
-    width: 85rem;
-    height: 500px;
-    margin-top: -3rem;
-    margin-right: auto;
-    margin-left: auto;
-    align-items: center;
-    justify-content: center;
-}
-
-/* wielkość obrazków na slajdach */
-
-.slajdy1 {
-    height: 400px;
-    width: 400px;
-    border-radius: 2rem;
-    align-items: center;
-    justify-content: center;
-
-}
- 
-/* wielkość slajdów */
- 
-.slide1 {
-    float: left;
-    height: 400px;
-    width: 600px;
-    align-items: center;
-}
- 
-/* animacja slajdów */
- 
-.slide-wrapper {
-     
-    /* Długosć całkowitej prezentacji na podstawie szerokości slajdów */
-    width: calc(600px * 9);
-     
-    /* specyfikacja animacji czas i sposobu odtwarzania */
-    animation: slide 30s infinite;
-
-}
-
- 
-/* Definicja animacji pokazu slajdów */
- 
-@keyframes slide {
-     
-    /* obliczony lewy margines każdego ze slajdów */
-    10% {
-        margin-left: 0px;
-    }
-    20% {
-        margin-left: calc(-600px * 1);
-    }
-    30% {
-        margin-left: calc(-600px * 2);
-    }
-    40% {
-        margin-left: calc(-600px * 3);
-    }
-    50% {
-        margin-left: calc(-600px * 4);
-    }
-    60% {
-        margin-left: calc(-600px * 5);
-    }
-    70% {
-        margin-left: calc(-600px * 6);
-    }
-    80% {
-        margin-left: calc(-600px * 7);
-    }
-    90% {
-        margin-left: calc(-600px * 8);
-    }
-}
-.pracamis {
-    width:100%;
-    height: 6rem ;
-    background-color:rgb(0, 172, 202, 0.3);
-    margin-top:2rem;
-    font-family: golos text;
-}
-.ztyłu {
-    position: absolute;
-    background-color: #FFFFFF;
-    margin-top: 3rem;
-    margin-right: 14% ;
-    margin-left: 14%;
-    width: 70%;
-    padding: 1rem;
-    border-radius: 2rem;
-
-}
-p3 {
-    font-size: 2.4rem;
-    border-radius: 3rem;
-    margin-top:  ;
-    margin-bottom: ;
-    margin-left: 7rem;
-    margin-right: 7rem;
-    float: left;
-    line-height: 3.5rem;
-}
-.pracamis2 {
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-    height: 40rem ;
-    background-color:rgb(0, 172, 202, 0.3);
-    font-family: golos text ;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-}
-.notka {
-    background-color: #FFFFFF;
-    margin-top: 12rem ;
-    margin-bottom: 6rem;
-    margin-left: -8rem;
-    margin-right: -8rem;
-    width: 25rem ;
-    height: 36rem;
-    padding-top: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem ;
-    border-radius: 4rem;
-    font-size: 2rem;
-    align-items:baseline;
-    text-align: center;
-    line-height: 3rem;
-}
-.notka:hover {
-    box-shadow: rgb(2, 196, 255, 0.3) 0px 25px 50px -12px;
-} 
-.białe {
-    width: 100%;
-    height: 220rem ;
-    background-color: white ;
-}
-.znak1 {
-    width: 3.8rem;
- 
-}
-.znak2 {
-    width: 6rem;
-   
-}
-.znak3 {
-    width: 4.6rem;
-    
-}
-.znak1, .znak2, .znak3 {
-    
-}
-.tabelka {
-    text-align: center;
-}
-.komórka:hover {
-    color: #00acca;
-}
-table {
-    background-color:rgb(207, 242, 253);
-    border-radius: 15px;
-    width: 70%;
-    font-family: lexend deca;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 16rem;
-    margin-right: auto;
-    margin-left: auto;
-}
-th {
-    font-size: 2.4rem;
-    padding-top:3rem;
-    padding-bottom: 3rem;
-    padding-right: 3rem;
-    padding-left: 3rem;
-    color: #333;
-    
-}
-td {
-    font-size:2rem ;
-    padding-top: 2rem ;
-    padding-bottom: 2rem ;
-    padding-right: 2rem ;
-    padding-left: 2rem;  
-}
-
-.komórka:hover {
-    background-color:rgb(255, 255, 255);
-    
-}
-.obrazek {
-    width: 7.5rem;
-    height: 7.5rem;
-    padding-left: 3rem;
-    padding-right: 3rem ;
-}
-
-
-li:hover {
-    color:  #02c4ff;
-    
-
-}
-footer {
-	text-align: center;
-	background-color: #f2f2f2;
-	color: #999;
-    padding-top: 2rem;
-    margin-bottom: 0rem;
-    height:4rem;
-    font-size: 1.5rem;
-    font-family: lexend deca;
-}
-        </style>
-    </head>
-<div class="container">
-<body>
-    
+    </style>
+</head>
+    <body>
     <header>
-		<div class="logo">
-			<a href="#">Logo</a>
+		<div class="logonazwa">
+            
+			<br><p8>PRANIE BIAŁY MIŚ</p8>
 		</div>
 		<nav>
+        
 			<ul>
+            
 				<li><a href="index.html">Strona główna</a></li>
 				<li><a href="Oferta.html">Oferta</a></li>
 				<li><a href="Cennik.html">Cennik</a></li>
@@ -548,109 +469,36 @@ footer {
 	</header>
     <div class="wizytówka">
         <h1><span style="color: #0077B5; font-weight:700;">Profesjonalne</span> pranie tapicerki meblowej<br>
-                na terenie Warszawy i okolic.</h1>
+            na terenie Warszawy i okolic.</h1>
+        <img class="tło1" src="Rysunki/tło5.jpg">
+        
                 <p>Od 8 lat dbamy o czystość w waszych domach.<br>
                     Jesteśmy dostępni 7 dni w tygodniu.<br>
-                    Sprawdź naszą ofertę i zadzwoń pod <span style="font-size: 2.5rem;color: #0077B5;font-weight: 700;">519 551 915.</span></p>
-                    <p1><a href='Kontakt.html'><button>ZAMÓW PRANIE</button></a><a href='Cennik.html'><button>SPRAWDŹ NASZE CENY</button></a></p1>
-    <img src="Rysunki/czystymis.png" class="czystymis">
-</div>
-    <div class="slajdy2">
-    <h2>
-        REALIZACJE PRACY
-    </h2>
-    <P2>
-        Sprawdź efekty naszego prania u klientów:
-    </P2>
-    </div>
-     <!-- pudełko pokazu slajdów -->
-     <div class="ramka"><div id="slideshow">
-        <div class="slide-wrapper">
-              <!-- slajdy i ich zawartość -->
-            <div class="slide1">
-                <h1 class="slide-number">
-                    
-                </h1>
-                <img src="Rysunki/kolaż1.jpg" class="slajdy1">
-            </div>
-            <div class="slide1">
-                <h1 class="slide-number">
-                    
-                </h1>
-                <img src="Rysunki/kolaż4.jpg" class="slajdy1">
-            </div>
-            <div class="slide1">
-                <h1 class="slide-number">
-                   
-                </h1>
-                <img src="Rysunki/kolaż2.jpg" class="slajdy1">
-            </div>
-            <div class="slide1">
-                <h1 class="slide-number">
-                   
-                </h1>
-                <img src="Rysunki/kolaż3.jpg" class="slajdy1">
-            </div>
-            <div class="slide1">
-                <h1 class="slide-number">
-                    
-                </h1>
-                <img src="Rysunki/kolaż5.jpg" class="slajdy1">
-            </div>
-            <div class="slide1">
-                <h1 class="slide-number">
-                    
-                </h1>
-                <img src="Rysunki/kolaż6.jpg" class="slajdy1">
-            </div>
-            <div class="slide1">
-                <h1 class="slide-number">
-                    
-                </h1>
-                <img src="Rysunki/kolaż4.jpg" class="slajdy1">
-            </div>
-            
-            <div class="slide1">
-                <h1 class="slide-number">
-                    
-                </h1>
-                <img src="Rysunki/kolaż6.jpg" class="slajdy1">
-            </div>
-            
-            <div class="slide1">
-                <h1 class="slide-number">
-                    
-                </h1>
-                <img src="Rysunki/kolaż4.jpg" class="slajdy1">
-            </div>
-            </div>
-            </div class="ramka">
-    </div>
-    <div class="pracamis">
-        <div class="ztyłu"><p3>Pranie z Białym Misiem to <span style="color: #0077B5;font-weight: 700;">gwaracja bezpieczeństwa</span> i
-            najwyższego standardu pracy. Chcesz dowiedzieć się z jakich środków korzystamy?
-            <a style="text-decoration:none" href="Oferta.html"><span style="color: #0077B5;font-weight: 700;">Naciśnij tutaj.</span></p3></a></div>
-    </div>
-    <div class="pracamis2">
-        <div class="notka">
-            <img src="Rysunki/kroplaikonka.png" class="znak1"><br>
-            <p4>Stosujemy metodę<br>ekstrakcyjną, opartą na<br>użyciu <span style="color: #0077B5; font-weight:700;">ekstraktorów i<br>
-            produktów firmy Karcher</span>,<br>które są <span style="color: #0077B5; font-weight:700;">gwaracją</span><br>skutecznego <span style="color: #0077B5; font-weight:700;">usunięcia<br>brudu oraz plam.</span></p4>
-        </div>
+                    Sprawdź naszą ofertę i zadzwoń pod <span style="color: #0077B5;font-weight: 700;">519 551 915.</span></p>
+                    <p1><a href='Kontakt.html'><button>ZAMÓW PRANIE</button></a><a href='Cennik.html'><button>SPRAWDŹ NASZE CENY</button></a></p1><p1><a href='Oferta.html'><button>DOWIEDZ SIĘ WIĘCEJ</button></a>
 
-        <div class="notka">
-            <img src="Rysunki/liśćikonka.png" class="znak2"><br>
-            <p4>Podczas procesu prania<br>nie używamy żadnych<br>substancji chemicznych,<br>
-                co zapewnia<br><span style="color: #0077B5; font-weight:700;">bezpieczeństwo</span><br>tapicerki oraz<br><span style="color: #0077B5; font-weight:700;">środowiska.</span></p4>
-        </div>
-            
-        <div class="notka">
-            <img src="Rysunki/kotekikona.png" class="znak3"><br>
-            <p4>Środki, z których<br>korzystamy nie<br>powodują zmiany<br>koloru mebla,
-                są<br><span style="color: #0077B5; font-weight:700;">bezpieczne dla dzieci,<br>alergików oraz<br>zwierząt.</span></p4>
-        </div>
+</div>
+
+</div>
+<div class="pracamis2">
+    <div class="notka">
+        <img src="Rysunki/kroplaikonka.png" class="znak1"><br>
+        <p4>Stosujemy metodę ekstrakcyjną, opartą na użyciu <span style="color: #0077B5; font-weight:700;">środków i
+        produktów firmy Karcher</span>, które są <span style="color: #0077B5; font-weight:700;">gwaracją</span> skutecznego <span style="color: #0077B5; font-weight:700;">usunięcia brudu oraz plam.</span></p4>
     </div>
-    <div class="białe">
+
+    <div class="notka">
+        <img src="Rysunki/ikonkamonety.png" class="znak2"><br>
+        <p4>Dajemy gwarację stałej, atrakcyjnej ceny oraz oferujemy <span style="color: #0077B5; font-weight:700;">rabaty przy każdym nastepnym praniu.</span> Sprawdź cennik, aby dowiedzieć się więcej.</p4>
+    </div>
+        
+    <div class="notka">
+        <img src="Rysunki/kotekikona.png" class="znak3"><br>
+        <p4>Środki, z których korzystamy nie powodują zmiany koloru mebla,
+            są <span style="color: #0077B5; font-weight:700;">bezpieczne dla dzieci, alergików oraz zwierząt.</span> Sprawdź ofertę, aby dowiedziec sie więcej.</p4>
+    </div>
+</div>
+<div class="białe">
         <table class="tabelka">
             <tr class="nagłówek">
                 <th>Oferta prania</th>
@@ -751,7 +599,5 @@ footer {
             <p5> PRANIE BIAŁY MIŚ +48 519 551 915</p5>
         </footer>
        </div>
-       
-   </div class="container">
+</div class="container">
 </body>
-</html> 
