@@ -617,6 +617,8 @@ button {
 @media (max-width: 768px) {
   .container {
     max-width: 640px;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
   }
   header {
     font-size: 1.2rem ;
@@ -629,12 +631,77 @@ button {
     padding-left: 0.6rem;
     border-radius: 0.3rem;
   }
+  .wizytówka {
+        display: table;
+        align-items: center;
+        width: 40rem;
+        height: 20rem;
+        margin-left: auto;
+        margin-right: auto;
+        color: #333;
+        margin-bottom: 2.2REM;
+    
+        
+    }
+    .tło1 {
+        width: 40rem;
+        height: 20rem;
+        position: absolute;
+        z-index: -1;
+        border-radius: 0.4rem;
+        opacity: 70%;
+    }
+    h1 {
+  padding-left: 0.40rem ;
+  padding-right: 0.40rem ;
+  padding-top: 0.6rem;
+  padding-bottom: 0.35rem;
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+  border-radius: 0.4rem;
+  text-align: center;
+  font-size: 1.2rem ;
+}
+
+p {
+  margin-left: 1.6rem;
+  margin-right: 1.6rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  padding-left: auto;
+  padding-right: auto;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.06rem;
+  border-radius: 0.4rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 2.8rem;
+}
+
+button {
+  margin-top: 3rem;
+	font-size: 0.8REM;
+	margin-left: 1.2REM;
+  margin-right: 0.6rem;
+
+}
+button {
+  border-radius: 1.3rem;
+  border-width: 0 0 8px;
+  font-weight: 700;
+  letter-spacing: 0.105rem;
+  line-height: 1rem;
+  padding: 0.8rem 0.8rem;
+}
 }
 
 /* sm */
 @media (max-width: 640px) {
   .container {
     max-width: 480px;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
   }
   header {
     font-size: 1.0rem ;
@@ -647,12 +714,80 @@ button {
     padding-left: 0.4rem;
     border-radius: 0.3rem;
   }
+  .wizytówka {
+        display: table;
+        align-items: center;
+        width: 30rem;
+        height: 16rem;
+        margin-left: auto;
+        margin-right: auto;
+        color: #333;
+        margin-bottom: 1REM;
+    
+        
+    }
+    .tło1 {
+        width: 30rem;
+        height: 16rem;
+        position: absolute;
+        z-index: -1;
+        border-radius: 0.2rem;
+        opacity: 70%;
+    }
+    h1 {
+  padding-left: 0.25rem ;
+  padding-right: 0.25rem ;
+  padding-top: 0.5rem;
+  padding-bottom: 0.3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+  text-align: center;
+  font-size: 1rem ;
+}
+
+p {
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: auto;
+  padding-right: auto;
+  font-size: 1rem;
+  line-height: 1rem;
+  letter-spacing: 0.05rem;
+  border-radius: 0.3rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 0.4rem;
+}
+button {
+    margin-top: 0.8rem;
+	font-size: 0.7REM;
+	margin-left: 0.7REM;
+    ;
+}
+button {
+  border-radius: 0.9rem;
+  border-width: 0 0 6px;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  line-height: 0.7rem;
+  padding: 0.7rem 1.2rem;
+}
+.kolumna {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
 }
 
 /* xs */
 @media (max-width: 480px) {
   .container {
-    max-width: 414px;
+    max-width: 416px;
   }
   header {
     font-size: 0.9rem ;
@@ -665,14 +800,87 @@ button {
     padding-left: 0.2rem;
     border-radius: 0.2rem;
   }
+  .wizytówka {
+        width: 26rem;
+        height: 14rem;
+        margin-left: auto;
+        margin-right: auto;
+        color: #333;
+        margin-bottom: 0REM;
+    
+        
+    }
+    .tło1 {
+        width: 26rem;
+        height: 14rem;
+        position: absolute;
+        z-index: -1;
+        border-radius: 0.1rem;
+        opacity: 70%;
+    }
+    h1 {
+  padding-left: 0.2rem ;
+  padding-right: 0.2rem ;
+  padding-top: 0.4rem;
+  padding-bottom: 0.25rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  border-radius: 0.25rem;
+  text-align: center;
+  font-size: 1rem ;
+}
+
+p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  padding-left: auto;
+  padding-right: auto;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  letter-spacing: 0.04rem;
+  border-radius: 0.25rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 1.6rem;
+  margin-bottom: 0.4rem;
+}
+button {
+    margin-top: 0.8rem;
+	font-size: 0.7REM;
+	margin-left: 0.4REM;
+}
+
+button {
+  border-radius: 0.9rem;
+  border-width: 0 0 6px;
+  font-weight: 700;
+  letter-spacing: 0.08rem;
+  line-height: 0.8rem;
+  padding: 0.5rem 1rem;
+}
+.kolumna {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
 }
 /* xxs */
-@media (max-width: 414px) {
+@media (max-width: 416px) {
   .container {
-    width: 366px;
+    max-width: 368px;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
   header {
-    font-size: 0.8rem ;
+    font-size: 0.6rem ;
+    position: absolute;
+    display: inline-block;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
   }
   li, ul {
     margin-left: 0.2rem;
@@ -682,7 +890,80 @@ button {
     padding-left: 0.2rem;
     border-radius: 0.2rem;
   }
+  .wizytówka {
+        color: #333;
+        margin-bottom: 0.2REM;
+        align-items: center;
+        display: flex
+    
+        
+    }
+    .tło1 {
+        width: 100%;
+        margin-top: 4rem;
+        height: 10rem;
+        position: absolute;
+        z-index: -1;
+        border-radius: 0.1rem;
+        opacity: 70%;
+    }
+
+    h1 {
+  padding-left: 0.15rem ;
+  padding-right: 0.15rem ;
+  padding-top: 0.35rem;
+  padding-bottom: 0.2rem;
+  margin-top: 0rem;
+  margin-bottom: 7rem;
+  border-radius: 0.2rem;
+  text-align: center;
+  font-size: 0.7rem ;
+  position: absolute;
+  z-index: 3;
 }
+
+p {
+    position: absolute;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  padding-left: auto;
+  padding-right: auto;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  letter-spacing: 0.03rem;
+  border-radius: 0.2rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 6rem;
+}
+button {
+    background-color: #00a7da;
+    position: relative;
+    margin-top: 0.6rem;
+	font-size: 0.6REM;
+}
+button {
+border-radius: 1;
+  border-width: 0.5;
+  font-weight: 700;
+  letter-spacing: 0.06rem;
+  line-height: 0.6rem;
+  padding-left: auto;
+  padding-right: auto;
+  
+}
+.kolumna {
+    margin-top: 12rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+br{ display: none;}
+	} 
 
     </style>
 </head>
