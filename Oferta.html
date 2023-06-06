@@ -1,313 +1,191 @@
 <!DOCTYPE html>
-<html lang="pl">
 <head>
-	<title>Oferta</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Pytania</title>
-	<link rel="stylesheet" href="style.css">
-	
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel="stylesheet">
-<style>
-	/* Reset stylów */
-* {
-	font-family:'Lexend Deca', sans-serif;
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	cursor:pointer;
-}
-
-/* Styl nagłówka */
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
 header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 40px;
-	background-color: #f2f2f2;
-	
-}
+position: sticky;
+display: flex;
+flex-direction: row;
+top: 0px;
+margin-left: -1rem;
+margin-right: -1rem;
+border-radius: 0;
+z-index: 1;
+font-size: 1.6rem;
+align-items: center;
+justify-content: space-between;
+font-family: mulish; 
+background-color: rgb(242, 242, 242, 0.8);
 
-/* Styl logo */
-.logo a {
-	font-size: 24px;
-	font-weight: bold;
+}
+header a {
 	color: #333;
 	text-decoration: none;
 }
 
-/* Styl nawigacji */
-nav ul {
-	display: flex;
+header a:hover {
+    color: #0077B5;
+    
 }
 
-nav li {
-	padding-right: 20px;
-	margin-left: 60px;
+li, ul {
 	list-style: none;
-}
-
-nav a {
-	font-size: 20px;
-	color: #333;
-	text-decoration: none;
-}
-
-nav a:hover {
-	color: #0077b5;
-}
-
-/* Styl sekcji głównej */
-main {
-	padding-top: 2.5%;
-	margin:auto;
-
-}
-
-
-/* Styl stopki */
-footer {
-	padding: 20px;
-	text-align: center;
-	background-color: #f2f2f2;
-	color: #999;
-	font-size: 14px;
-}
-      
-
-		h1 {
-			color:#0077b5 ;
-			text-shadow: 4px 4px 0px rgba(0, 119, 181, 0.315);
-			
-		}
-		.treść {
-			display:inline;
-			flex-direction: column;
-			text-align: center;
-			display: flex;
-			font-size: 150%;
-			 
-		}
-		p {
-			font-size: 24px;
-			padding-top: 15px;
-			
-		}
-		.podpis 
-		{
-			font-size: 24px;
-			color: #999;
-            margin-bottom: 2.5%;
-		}
-.pytania {
-    margin-left: 25%;
-    margin-right: 25%;
-    font-size: 24px;
-}
-.tekst {
-	background-color: #0077b5;
-	width: 100%;
-	padding: 5%;
     display: flex;
-  flex-direction: row;
-}	
-.card1 {
-  position: relative;
-  width: 25%;
-  height: 360px;
-  background: mediumturquoise;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 25px;
-  font-weight: bold;
-  border-radius: 15px;
-  cursor: pointer;
-  margin-left: 5%;
-  margin-right: 5%;
+    margin-left: 2rem;
+    border-radius: 4px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 2rem ;
+    padding-left: 2rem;
 }
+li {
+    background-color: #ffffff;
+}
+li:hover 
+    {
+    background-color: rgb(2, 196, 255, 0.3);
+    transition: .6s;
+    }
 
-.card1::before,
-.card1::after {
-  position: absolute;
-  content: "";
-  width: 30%;
-  height: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 25px;
-  font-weight: bold;
-  background-color: lightblue;
-  transition: all 0.5s;
+.logo {
+    width: 5rem;
+    height: 5rem; 
 }
-
-.card1::before {
-  top: 0;
-  right: 0;
-  border-radius: 0 15px 0 100%;
+.logonazwa {
+    display: flex;
+    font-family: lexend deca;
+    font-weight: 600; 
 }
-
-.card1::after {
-  bottom: 0;
-  left: 0;
-  border-radius: 0 100%  0 15px;
-}
-
-.card1:hover::before,
-.card1:hover:after {
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-  transition: all 0.5s;
-}
-
-.card1:hover:after {
-  content: "tiruriru";
-}	
-.card1:hover {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-}
-
-.card2 {
-  position: relative;
-  width: 25%;
-  height: 360px;
-  background: mediumturquoise;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 25px;
-  font-weight: bold;
-  border-radius: 15px;
-  cursor: pointer;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-.card2::before,
-.card2::after {
-  position: absolute;
-  content: "";
-  width: 30%;
-  height: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 25px;
-  font-weight: bold;
-  background-color: lightblue;
-  transition: all 0.5s;
-}
-
-.card2::before {
-  top: 0;
-  right: 0;
-  border-radius: 0 15px 0 100%;
-}
-
-.card2::after {
-  bottom: 0;
-  left: 0;
-  border-radius: 0 100%  0 15px;
-}
-
-.card2:hover::before,
-.card2:hover:after {
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-  transition: all 0.5s;
-}
-.card2:hover {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-}
-
-.card2:hover:after {
-  content: "tiruriru";
-}
-.card3 {
-  position: relative;
-  text-align: center;
-  content: "";
-  width: 25%;
-  height: 360px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 25px;
-  font-weight: bold;
-  border-radius: 15px;
-  cursor: pointer;
-  margin-left: 5%;
-  margin-right: 5%;
-  
-}
-
-.card3:hover {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-
-.card3::before,
-.card3::after {
-  position: absolute;
-  content: "";
-  width: 30%;
-  height: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 25px;
-  font-weight: bold;
-  background-color: lightblue;
-  transition: all 0.5s;
-}
-
-.card3::before {
-  top: 0;
-  right: 0;
-  border-radius: 0 15px 0 100%;
-}
-
-.card3::after {
-  bottom: 0;
-  left: 0;
-  border-radius: 0 100%  0 15px;
-}
-
-.card3:hover::before,
-.card3:hover:after {
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-  transition: all 0.5s;
-}
-
-.card3:hover:after {
-  content: "fsdfjsjfskl";
+p8 {
+   position: absolute;
 
 }
-img {
-    height: 100%;
-    width: 100%;
-    border-radius: 15px;
+.ofertaprania {
+margin-left: 20rem;   
+position: relative; 
+ }
+.ofertapojemnik {
+box-sizing: border-box;
+display: block;
 }
-p1 {
+
+.ofertatreść {
+box-sizing: border-box;
+display: block;
+margin-left: -1rem ;
+margin-right: -1rem;
+
+}
+
+.oferta1, .oferta2, .oferta3, .oferta4, .oferta5 {
+    box-sizing: border-box;
+    display: block;
+    border-radius: 0.4rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(2, 196, 255, 0.3) -1rem 1rem 0rem;
+    width: 80rem;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+    border-width: 0.4rem;
+    border-style: dashed;
+    border-color: #00a7da;
+    padding-left: 3rem;
+   text-align: justify;
+
+}
+
+.ofertatytuł {
     position: absolute;
-    color: #ffffff;
-    font-size: 40px;
-text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+color: #000000c0;
+font-family: lexend deca;
+font-size: 1.9rem;
+font-weight: 700;
+ display: inline;
+ margin-bottom: 0rem;
+
+
 }
-</style>
+
+.pytania1, .pytania2, .pytania3, .pytania4, .pytania5 {
+position: relative;
+font-size: 1.3REM;
+line-height: 1.8rem;
+color: rgba(0, 0, 0, 0.845);
+font-family: mulish;
+margin-left: 1rem;
+display: inline-block;
+font-weight: 600;
+ 
+}
+.pytania1 {
+    margin-left: 39.6REM;
+    width: 60rem;
+}
+.pytania2 {
+    margin-left: 36REM;
+    width: 60rem;
+}
+.pytania3 {
+    margin-left: 39.6REM;
+    width: 60rem;
+}
+.pytania4 {
+    margin-left: 21REM;
+    width: 60rem;
+}
+.pytania5 {
+    margin-left: 21REM;
+    width: 60rem;
+}
+
+.elementy {
+box-sizing: border-box;
+column-gap: 3%;
+display: flex;
+row-gap: 3%;
+padding-bottom: 1rem;
+padding-top: 2rem;
+align-items: center;
+}
+
+.tekst {
+box-sizing: border-box;
+display: block;
+font-size: 20px;
+width: 40rem;
+line-height: 1.8rem;
+color: rgba(0, 0, 0, 0.845);
+font-family: mulish;
+text-align: justify
+}
+.obrazki {
+display: inline;
+box-sizing: border-box;
+width:488px;
+height: 320px;
+overflow-x: clip;
+overflow-y: clip;
+border-radius: 4px;
+}
+.treścobraz {
+box-sizing: border-box;
+display: block;
+}
+
+    </style>
 </head>
 <body>
-	<header>
-		<div class="logo">
-			<a href="#">Logo</a>
+    <header>
+		<div class="logonazwa">
+            <br><p8>PRANIE BIAŁY MIŚ</p8>
 		</div>
 		<nav>
+        
 			<ul>
+            
 				<li><a href="index.html">Strona główna</a></li>
 				<li><a href="Oferta.html">Oferta</a></li>
 				<li><a href="Cennik.html">Cennik</a></li>
@@ -316,34 +194,151 @@ text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 			</ul>
 		</nav>
 	</header>
-	<main><div class="treść">
-	<div class="text">
-	<h1>OFERTA</h1>
-	<p>Sprawdź naszą oferte prania i czyszczenia mebli tapicerowanych w Warszawie i okolicach.</p>
-    <P class="podpis"> Chcesz zamówić pranie? Sprawdź zakładkę KONTAKT.</P>
-		</div></main>
-        <div class="tekst">
-             <div class="card3"><p1>PRANIE KANAPY</p1>
-                <img src="Rysunki/ofertakanapa.jpg">
-            </div>
-            <div class="card1"><p1>PRANIE MATERACA</p1>
-                <img src="Rysunki/ofertamaterac.jpg">
-            </div>
+    <section class="ofertaprania">
 
-            <div class="card2"><p1>PRANIE DYWANU</p1>
-                <img src="Rysunki/dywanoferta.jpg">
-           
-                </div class="card3">
+            <div  class="ofertapojemnik">
+
+                <div  class="ofertatreść">
+                    <h1  class="ofertatytuł">CZYSZCZENIE TAPICERKI MEBLOWEJ -</h1><p class="pytania1">Ile czasu trwa pranie? Czy pierzecie antyki?
+                        <br>Sprawdź odpowiedzi na pytania o praniu tapicerki meblowej<a href="index.html#tabelka1"><button>TUTAJ</button></a> </p>
+                    <div  class="oferta1">
+
+
+                            <div class="elementy">
+
+                            <p  class="tekst">
+                                Pierzemy meble z dojazdem do klienta. Pranie jest wykonywane
+                                metodą ekstrakcyjną przy użyciu specjalistycznych maszyn wiodących
+                                marek (Karcher, Prochem), oraz najlepszej chemii dostępnej na
+                                rynku (Prochem, Chemspec). Na uporczywe plamy typu farba, oleje,
+                                gumy używamy odpowiednio dobranych odplamiaczy. Dodatkowo usuwamy
+                                nieprzyjemne zapachy środkami neutralizacyjnymi. Czas schnięcia
+                                jest uzależniony od temperatury, wilgotność, stopnia zabrudzenia i
+                                zajmuje od kilku do kilkunastu godzin.</p>
+
+                                    <div class="treścobraz">
+
+                                        <img class="obrazki" src="Rysunki/sofa01.jpg">
+
+                                    </div class="treścobraz">
+
+                            </div class="elementy">
+
+                    </div class="oferta1">
+                    <h1  class="ofertatytuł">PRANIE DYWANÓW I WYKŁADZIN -</h1>
+                    <p class="pytania2">Jak długo schnie dywan? Ile trwa wypranie wykładziny?
+                        <br>Sprawdź odpowiedzi na pytania o praniu dywanu <button>TUTAJ</button></p>
+                    <div  class="oferta2">
+
+
+                            <div class="elementy">
+
+                                <div class="treścobraz">
+
+                                    <img class="obrazki" src="Rysunki/dywan02.jpg">
+
+                                </div class="treścobraz">
+
+                                <p  class="tekst">
+
+                                Pranie odbywa się metodą ekstrakcyjną, przy użyciu skutecznych
+                                środków (Prochem,Chemspec) w domu klienta. Przed właściwym praniem
+                                jest nanoszony prespray, który zostaje dokładnie rozprowadzony,
+                                wraz z zebraniem brudu szorowarką. Regularne pranie dywanu pozwoli
+                                zachować go na dłuższy czas. Dzięki temu zabiegowi zostaną
+                                usunięte wszelkie roztocza, alergeny i bakterie, oraz nieprzyjemny
+                                zapach. Zapraszam do kontaktu po więcej informacji.</p>
+
+                            </div class="elementy">
+
+                    </div class="oferta2">
+                    <h1  class="ofertatytuł">CZYSZCZENIE KANAPY I NAROŻNIKA -</h1><p class="pytania3">Jak długo schnie kanapa?
+                        Czy plamy z moczu zejdą z materaca?
+                        <br>Sprawdź odpowiedzi na pytania o praniu materaca <button>TUTAJ</button></p>
+                    <div  class="oferta3">
+                    
+
+                            <div class="elementy">
+
+                            <p  class="tekst">
+                                Pierzemy meble z dojazdem do klienta. Pranie jest wykonywane
+                                metodą ekstrakcyjną przy użyciu specjalistycznych maszyn wiodących
+                                marek (Karcher, Prochem), oraz najlepszej chemii dostępnej na
+                                rynku (Prochem, Chemspec). Na uporczywe plamy typu farba, oleje,
+                                gumy używamy odpowiednio dobranych odplamiaczy. Dodatkowo usuwamy
+                                nieprzyjemne zapachy środkami neutralizacyjnymi. Czas schnięcia
+                                jest uzależniony od temperatury, wilgotność, stopnia zabrudzenia i
+                                zajmuje od kilku do kilkunastu godzin.</p>
+
+                                    <div class="treścobraz">
+
+                                        <img class="obrazki" src="Rysunki/kanapa01.jpg">
+
+                                    </div class="treścobraz">
+
+                            </div class="elementy">
+
+                    </div class="oferta3">
+                    <h1  class="ofertatytuł">PRANIE MATERACA -</h1><p class="pytania4">Ile schnie materac? Co trzeba przygotować przed praniem?
+                        Czy plamy z moczu zejdą z materaca?
+                        <br>Sprawdź odpowiedzi na pytania o praniu materaca <button>TUTAJ</button></p>
+                    <div  class="oferta4">
+
+                        
+                    
+                            <div class="elementy">
+                    
+                                <div class="treścobraz">
+                    
+                                    <img class="obrazki" src="Rysunki/materac01.jpg">
+                    
+                                </div class="treścobraz">
+                    
+                                <p  class="tekst">
+                    
+                              
+                            Pranie materaca metodą ekstrakcyjną to gwaracja czystości na zewnatrz jak i wewnątrz materaca.
+                            <br>Podczas procesu prania, środek czyszczacy jest rozprowadzany po zewnętrznej powierzchni materaca,
+                            skutecznie rozpuszczając wszelkie zabrudzenia.
+                            <br>Następnie, za pomocą
+                            odkurzaca ekstrakcyjnego firmy Karcher, środek jest wypłukiwany i odsysany pod wysokim ciśnieniem
+                            usuwając ze sobą wszelkie zanieczyszczenia.
+                            <br>Warto pamiętać, że pomimo skutecznego prania niektóre plamy mogą pozostać - im świeższa plama tym większa szansa na jej całkowite usunięcie.</p>
+                    
+                            </div class="elementy">
+                    
+                    </div class="oferta4">
+                    <h1  class="ofertatytuł">PRANIE MATERACA -</h1><p class="pytania5">Ile schnie materac? Co trzeba przygotować przed praniem?
+                        Czy plamy z moczu zejdą z materaca?
+                        <br>Sprawdź odpowiedzi na pytania o praniu materaca <button>TUTAJ</button></p>
+                    <div  class="oferta5">
 
             
 
-        </div class="tekst">
-		</div>	
-        
-	
+                            <div class="elementy">
 
-	<footer>
-		<p> Pranie Biały Miś +48 519 551 915</p>
-	</footer>
+                            <p  class="tekst">
+                                Pierzemy meble z dojazdem do klienta. Pranie jest wykonywane
+                                metodą ekstrakcyjną przy użyciu specjalistycznych maszyn wiodących
+                                marek (Karcher, Prochem), oraz najlepszej chemii dostępnej na
+                                rynku (Prochem, Chemspec). Na uporczywe plamy typu farba, oleje,
+                                gumy używamy odpowiednio dobranych odplamiaczy. Dodatkowo usuwamy
+                                nieprzyjemne zapachy środkami neutralizacyjnymi. Czas schnięcia
+                                jest uzależniony od temperatury, wilgotność, stopnia zabrudzenia i
+                                zajmuje od kilku do kilkunastu godzin.</p>
+
+                                    <div class="treścobraz">
+
+                                        <img class="obrazki" src="Rysunki/tlo1.jpg">
+
+                                    </div class="treścobraz">
+
+                            </div class="elementy">
+
+                    </div class="oferta5">
+
+</div>
+</div>
+</section class="ofertaprania">
 </body>
 </html>
