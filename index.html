@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link href='https://fonts.googleapis.com/css?family=Lexend Deca|Lexend Deca|Lexend:300,400,500,700,900"' rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,10 +20,9 @@ position: sticky;
 display: flex;
 flex-direction: row;
 top: 0px;
-left: -1rem;
-right: -1rem;
+margin-left: 0rem;
+margin-right: -1rem;
 border-radius: 0;
-width: 100% ;
 z-index: 1;
 font-size: 2rem;
 align-items: center;
@@ -40,7 +37,7 @@ header a {
 }
 
 header a:hover {
-    color: #007da3;
+    color: #0077B5;
     
 }
 
@@ -59,23 +56,18 @@ li {
 }
 li:hover 
     {
-    background-color: #02c4ff;
+    background-color: rgb(2, 196, 255, 0.3);
     transition: .6s;
     }
 
 .logo {
     width: 5rem;
-    height: 5rem;
-    margin-top: ;
-    margin-left: rem;
-    margin-right: rem;   
+    height: 5rem; 
 }
 .logonazwa {
     display: flex;
-    flex-direction: ;
     font-family: lexend deca;
-    font-weight: 600;
-    margin-left: rem;  
+    font-weight: 600; 
 }
 p8 {
    position: absolute;
@@ -142,13 +134,15 @@ p:hover {
 -moz-box-shadow: 0px 0px 64px -10px rgb(255, 255, 255);
 box-shadow: 0px 0px 64px -10px rgb(255, 255, 255);
 }
+
+
 button {
     margin-top: 4.5rem;
 	font-size: 1.5REM;
 	margin-left: 4.4REM;
 }
 /* CSS */
-button {
+button {  
   appearance: button;
   background-color: #00a7da;
   border: solid transparent;
@@ -202,16 +196,13 @@ box-shadow: 0px 0px 64px -10px rgba(0, 119, 181, 1);
 button:disabled {
   cursor: auto;
 }
-
-
 .pracamis2 {
     font-family: lexend deca;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
-    padding-right: 12rem ;
-    padding-left: 12rem;
+   
 }
 .notka {
     background-color: #FFFFFF;
@@ -227,7 +218,7 @@ button:disabled {
     padding-right: 1.5rem ;
     border-radius: 2rem;
     font-size: 1.6rem;
-    align-items:baseline;
+    align-items: baseline;
     text-align: center;
     line-height: 2.6rem;
     border-width: 0.5rem;
@@ -275,8 +266,8 @@ margin-bottom: 1rem;
 .podpokaz {
     background-color: rgb(242, 242, 242, 0.8);
     height: 36rem;
-    left: -1rem;
-    right: -1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
     
 
 }
@@ -303,7 +294,6 @@ margin-bottom: 1rem;
          cursor: pointer;
          position: absolute;
          top: 14rem;
-         width:  ;
          padding-top: 0.5rem;
          padding-bottom: 0.5rem;
          padding-left: 1rem;
@@ -406,9 +396,130 @@ footer {
     height:4rem;
     font-size: 1.5rem;
     font-family: lexend deca;
-    width: 100%;
 }
 
+/* 2xl */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header {
+    font-size: 1.8rem ;
+  }
+  li, ul {
+    margin-left: 1.6rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-right: 1.6rem ;
+    padding-left: 1.6rem;
+  }
+  .wizytówka {
+        display: table;
+        align-items: center;
+        width: 72rem;
+        height: 34rem;
+        margin-left: auto;
+        margin-right: auto;
+        color: #333;
+        margin-bottom: 5.8REM;
+    
+        
+    }
+    .tło1 {
+        width: 72rem;
+        height: 34rem;
+        position: absolute;
+        z-index: -1;
+        border-radius: 1rem;
+        opacity: 70%;
+    }
+    h1 {
+    padding-left: 0.85rem ;
+  padding-right: 0.85rem ;
+  padding-top: 0.7rem;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.7rem;
+  text-align: center;
+  font-size: 2.4rem ;
+}
+
+p {
+  margin-left: 2.8rem;
+  margin-right: 2.8rem;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+  padding-left: auto;
+  padding-right: auto;
+  font-size: 2.6rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.09rem;
+  border-radius: 0.7rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 5.2rem;
+}
+
+button {
+    margin-top: 4.3rem;
+	font-size: 1.3REM;
+	margin-left: 4.1REM;
+}
+button {
+  border-radius: 1rem;
+  border-width: 0 0 9px;
+  font-weight: 700;
+  letter-spacing: 0.12rem;
+  line-height: 1.2rem;
+  padding: 1.2rem 1.7rem;
+}
+
+.notka {
+    background-color: #FFFFFF;
+    margin-top: 3rem ;
+    margin-left: 1rem ;
+    margin-right: 1rem;
+    margin-bottom: 0rem;
+    width: 22rem ;
+    height: 20rem;
+    padding-bottom: -1rem;
+    padding-top: 1.4rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem ;
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    align-items:baseline;
+    text-align: center;
+    line-height: 2.2rem;
+    border-width: 0.5rem;
+    border-style: dashed;
+    border-color: #00a7da;
+    
+}
+
+.znak1 {
+    width: 3rem;
+ 
+}
+.znak2 {
+    width: 4.5rem;
+   
+}
+.znak3 {
+    width: 3.75rem;
+    
+}
+
+.znak1, .znak2, .znak3 {
+margin-bottom: 0.4rem;
+}
+
+}
 
 /* xl */
 @media (max-width: 1280px) {
@@ -963,7 +1074,8 @@ border-radius: 1;
     width: 100%;
 }
 br{ display: none;}
-	} 
+}
+
 
     </style>
 </head>
@@ -988,30 +1100,30 @@ br{ display: none;}
     <div class="wizytówka">
         <h1><span style="color: #0077B5; font-weight:700;">Profesjonalne</span> pranie tapicerki meblowej<br>
             na terenie Warszawy i okolic.</h1>
-        <img class="tło1" src="Rysunki/tło5.jpg">
+        <img class="tło1" src="tło5.jpg">
         
                 <p>Od 8 lat dbamy o czystość w waszych domach.<br>
                     Jesteśmy dostępni 7 dni w tygodniu.<br>
                     Sprawdź naszą ofertę i zadzwoń pod <span style="color: #0077B5;font-weight: 700;">519 551 915.</span></p>
-                    <p1><a href='Kontakt.html'><button>ZAMÓW PRANIE</button></a><a href='Cennik.html'><button>SPRAWDŹ NASZE CENY</button></a></p1><p1><a href='Oferta.html'><button>DOWIEDZ SIĘ WIĘCEJ</button></a>
+                    <div class="kolumna"><p1><a href='Kontakt.html'><button>ZAMÓW PRANIE</button></a></p1><p1><a href='Cennik.html'><button>SPRAWDŹ NASZE CENY</button></a></p1><p1><a href='Oferta.html'><button>DOWIEDZ SIĘ WIĘCEJ</button></a></p1></div>
 
 </div>
 
 </div>
 <div class="pracamis2">
     <div class="notka">
-        <img src="Rysunki/kroplaikonka.png" class="znak1"><br>
+        <img src="kroplaikonka.png" class="znak1"><br>
         <p4>Stosujemy metodę ekstrakcyjną, opartą na użyciu <span style="color: #0077B5; font-weight:700;">środków i
         produktów firmy Karcher</span>, które są <span style="color: #0077B5; font-weight:700;">gwaracją</span> skutecznego <span style="color: #0077B5; font-weight:700;">usunięcia brudu oraz plam.</span></p4>
     </div>
 
     <div class="notka">
-        <img src="Rysunki/ikonkamonety.png" class="znak2"><br>
+        <img src="ikonkamonety.png" class="znak2"><br>
         <p4>Dajemy gwarację stałej, atrakcyjnej ceny oraz oferujemy <span style="color: #0077B5; font-weight:700;">rabaty przy każdym nastepnym praniu.</span> Sprawdź cennik, aby dowiedzieć się więcej.</p4>
     </div>
         
     <div class="notka">
-        <img src="Rysunki/kotekikona.png" class="znak3"><br>
+        <img src="kotekikona.png" class="znak3"><br>
         <p4>Środki, z których korzystamy nie powodują zmiany koloru mebla,
             są <span style="color: #0077B5; font-weight:700;">bezpieczne dla dzieci, alergików oraz zwierząt.</span> Sprawdź ofertę, aby dowiedziec sie więcej.</p4>
     </div>
@@ -1019,19 +1131,19 @@ br{ display: none;}
 <div class="podpokaz">
 <div class="carousel">
     <div class="images fade">
-       <img class="pokaz" src="Rysunki/kolaż1.jpg">
+       <img class="pokaz" src="kolaż1.jpg">
        </div>
        <div class="images fade">
-          <img class="pokaz" src="Rysunki/kolaż2.jpg">
+          <img class="pokaz" src="kolaż2.jpg">
        </div>
        <div class="images fade">
-          <img class="pokaz" src="Rysunki/kolaż3.jpg">
+          <img class="pokaz" src="kolaż3.jpg">
        </div>
        <div class="images fade">
-          <img class="pokaz" src="Rysunki/kolaż4.jpg">
+          <img class="pokaz" src="kolaż4.jpg">
        </div>
        <div class="images fade">
-          <img class="pokaz" src="Rysunki/kolaż5.jpg">
+          <img class="pokaz" src="kolaż5.jpg">
        </div>
        
        <!-- wstecz i dalej -->
@@ -1050,96 +1162,96 @@ br{ display: none;}
  </div>
 </div class="podpokaz">
 <div class="białe">
-       <table class="tabelka">
+        <table class="tabelka">
             <tr class="nagłówek">
                 <th>Oferta prania</th>
                 <th></th>
                 <th>Cena</th>
             </tr>
             <tr class="komórka">
-            <td><img src="ikonki mebli/Krzesło bez oparcia.png" class="obrazek"> </td>
+            <td><img src="Krzesło bez oparcia.png" class="obrazek"> </td>
             <td> Krzesło bez oparcia</td>
             <td> 10 zł</td>
             </tr>
             <tr class="komórka">
-            <td> <img src="ikonki mebli/Krzesło.png" class="obrazek"></td>
+            <td> <img src="Krzesło.png" class="obrazek"></td>
             <td> Krzesło z oparciem </td>
             <td> 15 zł</td>
             </tr>
             <tr class="komórka">
-            <td><img src="ikonki mebli/Krzesło biurowe.png" class="obrazek"> </td>
+            <td><img src="Krzesło biurowe.png" class="obrazek"> </td>
             <td> Krzesło biurowe</td>
             <td> 20 zł</td>
             </tr>
             <tr class="komórka">
-                <td><img src="ikonki mebli/Naroznik mały.png" class="obrazek"></td>
+                <td><img src="Naroznik mały.png" class="obrazek"></td>
                 <td>Mały narożnik</td>
                 <td>120 zł</td>
             </tr>
             <tr class="komórka">
-                <td><img src="ikonki mebli/Naroznik duży.png" class="obrazek"></td>
+                <td><img src="Naroznik duży.png" class="obrazek"></td>
                 <td>Duży narożnik</td>
                 <td>150 zł</td>
             </tr>
             <tr class="komórka">
-                <td><img src="ikonki mebli/Kanapa 2osobowa.png" class="obrazek"></td>
+                <td><img src="Kanapa 2osobowa.png" class="obrazek"></td>
                 <td>Kanapa 2-osobowa</td>
                 <td>90 zł</td>
             </tr>
             <tr class="komórka">
-                <td><img src="ikonki mebli/Kanapa 3osobowa.png" class="obrazek"></td>
+                <td><img src="Kanapa 3osobowa.png" class="obrazek"></td>
                 <td>Kanapa 3-osobowa</td>
                 <td>120 zł</td>
             </tr>
             <tr class="komórka">
-                <td><img src="ikonki mebli/Wersalka.png" class="obrazek"></td>
+                <td><img src="Wersalka.png" class="obrazek"></td>
                 <td>Wersalka</td>
                 <td>90 zł</td>
             </tr>
             <tr class="komórka">
-                <td><img src="ikonki mebli/Poduszka.png" class="obrazek"></td>
+                <td><img src="Poduszka.png" class="obrazek"></td>
                 <td>Poduszka</td>
                 <td>8 zł</td>
             </tr>
             <tr class="komórka">
-                <td><img src="ikonki mebli/Puf.png" class="obrazek"></td>
+                <td><img src="Puf.png" class="obrazek"></td>
                 <td>Pufa, podnóżek</td>
                 <td>15 zł</td>
             </tr>
             <tr class="komórka">
-                <td><img src="ikonki mebli/Mały fotel.png" class="obrazek"></td>
+                <td><img src="Mały fotel.png" class="obrazek"></td>
                 <td>Mały fotel</td>
                 <td>40 zł</td>
             </tr>
             <tr class="komórka">
-                <td><img src="ikonki mebli/Duży fotel.png" class="obrazek"></td>
+                <td><img src="Duży fotel.png" class="obrazek"></td>
                 <td>Duży fotel</td>
                 <td>70 zł</td>
             </tr>
             <tr class="komórka">
-                <td><img src="ikonki mebli/Materac.png" class="obrazek"></td>
+                <td><img src="Materac.png" class="obrazek"></td>
                 <td> Materac 1-osobowy</td>
                 <td>60 zł za 1 stronę<br>
                 110 zł za 2 strony</td>
             </tr>
             <tr class="komórka">
-                <td><img src="ikonki mebli/Materac.png" class="obrazek"></td>
+                <td><img src="Materac.png" class="obrazek"></td>
                 <td> Materac 2-osobowy</td>
                 <td>70 zł za 1 stronę<br>
                     120 zł za 2 strony</td>
             </tr>
             <tr class="komórka">
-                <td><img src="ikonki mebli/Fotelik.png" class="obrazek"></td>
+                <td><img src="Fotelik.png" class="obrazek"></td>
                 <td>Fotelik samochodowy</td>
                 <td>50 zł</td>
             </tr>
             <tr class="komórka">
-                <td><img src="ikonki mebli/Wózek dziecięcy.png" class="obrazek"></td>
+                <td><img src="Wózek dziecięcy.png" class="obrazek"></td>
                 <td>Wózek dziecięcy</td>
                 <td>60 zł</td>
             </tr>
             <tr class="komórka">
-                <td><img src="ikonki mebli/Dywan.png" class="obrazek"></td>
+                <td><img src="Dywan.png" class="obrazek"></td>
                 <td>Dywan</td>
                 <td>od 6 zł/m2 do 18 zł/m2<br>
                  cena indywidualna </td>
