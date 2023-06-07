@@ -7,73 +7,78 @@
     <style>
 
 header {
-position: sticky;
-display: flex;
-flex-direction: row;
-top: 0px;
-border-radius: 0;
-z-index: 1;
-font-size: 1.6rem;
-justify-content: space-between;
-font-family: mulish; 
-background-color: rgb(242, 242, 242, 0.8);
-margin-right: -2rem;
-margin-left: -2rem;
-margin-bottom: 1rem;
-
-
-}
-header a {
-	color: #333;
-	text-decoration: none;
-}
-
-header a:hover {
-    color: #0077B5;
+  position: sticky;
+  flex-direction: row;
+  top: 0px;
+  border-radius: 0;
+  z-index: 1;
+  font-size: 1.4rem;
+  justify-content: space-between;
+  font-family: mulish; 
+  background-color: rgb(242, 242, 242, 0.8);
+  padding-top: 2rem; 
+  padding-bottom: 2rem;
+  margin-right: -2rem;
+  margin-left: -1rem;
+  margin-bottom: 1rem;
+  }
+  header a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  header a:hover {
+      color: #0077B5;
+      
+  }
+  .p8 {
+    position: absolute;
+  }
+  ul{
+    margin-right: -30%;
+      font-size: 1.4rem;
+    flex-direction: row;
+    text-align: center;   
+  }
+  li {
+    list-style: none;
+      border-radius: 4px;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding-right: 1.6rem ;
+      padding-left: 1.6rem;
+    display: inline;
+    margin-left: 1rem;
     
-}
-ul{
-    display: flex;
     
-    
-}
-li {
-	list-style: none;
-    margin-right: 2rem ;
-    margin-left: 1rem ;
-    border-radius: 4px;
+  }
+  li {
+      background-color: #ffffff;
+  }
+  li:hover 
+      {
+      background-color: rgb(2, 196, 255, 0.3);
+      transition: .6s;
+      }
+  
+  .logo {
+    position: absolute;
+      width: 5rem;
+      height: 5rem;
     padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-right: 2rem ;
-    padding-left: 2rem;
-}
-li {
-    background-color: #ffffff;
-}
-li:hover 
-    {
-    background-color: rgb(2, 196, 255, 0.3);
-    transition: .6s;
-    }
-
-.logo {
-    width: 5rem;
-    height: 5rem; 
-}
-.logonazwa {
-    display: flex;
-    font-family: lexend deca;
-    font-weight: 600; 
-}
-p8 {
-   position: absolute;
-
-}
-.ofertaprania {
-    box-sizing: border-box;
-    position: absolute ;
-    left: 50%;
-    transform: translateX(-50%);
+      padding-bottom: 1rem; 
+  }
+  .logonazwa {
+     position: absolute;
+      font-family: lexend deca;
+      font-weight: 600;
+  
+  }
+ .ofertapojemnik {
+    margin-left: 20% ;
+    margin-right: 20% ;
+    position: relative;
+    
  }
 
 .oferta1, .oferta2, .oferta3, .oferta4, .oferta5 {
@@ -94,7 +99,7 @@ p8 {
 }
 
 .ofertatytuł {
-    position:fixed;
+    position:absolute;
 color: #000000c0;
 font-family: lexend deca;
 font-size: 1.8rem;
@@ -114,7 +119,7 @@ font-family: mulish;
 margin-left: 1rem;
 display: inline-block;
 font-weight: 600;
-background-color: rgb(2, 196, 255, 0.15);
+background-color: rgba(2, 196, 255, 0.152);
 padding-top: 1rem ;
 padding-bottom: 1rem;
 padding-left: 0.4rem;
@@ -190,17 +195,13 @@ overflow-x: clip;
 overflow-y: clip;
 border-radius: 4px;
 }
-.treścobraz {
-box-sizing: border-box;
-display: block;
-}
 
     </style>
 </head>
 <body>
     <header>
-		<div class="logonazwa">
-            <br><p8>PRANIE BIAŁY MIŚ</p8>
+		<div class="logo">
+			<a href="#">Logo</a>
 		</div>
 		<nav>
         
@@ -214,7 +215,7 @@ display: block;
 			</ul>
 		</nav>
 	</header>
-    <section class="ofertaprania">
+    
 
             <div  class="ofertapojemnik">
 
@@ -238,7 +239,7 @@ display: block;
 
                                     <div class="treścobraz">
 
-                                        <img class="obrazki" src="Rysunki/sofa01.jpg">
+                                        <img class="obrazki" src="sofa01.jpg">
 
                                     </div class="treścobraz">
 
@@ -255,7 +256,7 @@ display: block;
 
                                 <div class="treścobraz">
 
-                                    <img class="obrazki" src="Rysunki/dywan02.jpg">
+                                    <img class="obrazki" src="dywan02.jpg">
 
                                 </div class="treścobraz">
 
@@ -292,7 +293,7 @@ display: block;
 
                                     <div class="treścobraz">
 
-                                        <img class="obrazki" src="Rysunki/kanapa01.jpg">
+                                        <img class="obrazki" src="kanapa01.jpg">
 
                                     </div class="treścobraz">
 
@@ -310,7 +311,7 @@ display: block;
                     
                                 <div class="treścobraz">
                     
-                                    <img class="obrazki" src="Rysunki/materac01.jpg">
+                                    <img class="obrazki" src="materac01.jpg">
                     
                                 </div class="treścobraz">
                     
@@ -349,7 +350,7 @@ display: block;
 
                                     <div class="treścobraz">
 
-                                        <img class="obrazki" src="Rysunki/tlo1.jpg">
+                                        <img class="obrazki" src="tlo1.jpg">
 
                                     </div class="treścobraz">
 
@@ -359,6 +360,6 @@ display: block;
 
 </div>
 </div>
-</section class="ofertaprania">
+
 </body>
 </html>
