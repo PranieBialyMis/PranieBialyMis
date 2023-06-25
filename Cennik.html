@@ -4,107 +4,182 @@
 	<title>Cennik</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Cennik</title>
-	<link rel="stylesheet" href="style.css">
-	
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">	
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel="stylesheet">
 <style>
+
+body {
+    height: 295%;
+    position: absolute;
+    width: 100%;
+    background-color: #ffffff98;
+}
+header {
+  position: sticky;
+  flex-direction: row;
+  top: 0px;
+  border-radius: 0;
+  z-index: 1;
+  font-size: 1.4rem;
+  justify-content: space-between;
+  font-family: mulish; 
+  background-color: rgb(242, 242, 242, 0.8);
+  padding-top: 2rem; 
+  padding-bottom: 2rem;
+  
+  width: 100%;
+  }
+  header a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  header a:hover {
+      color: #0077B5;
+      
+  }
+  footer {
+    bottom: 0px;
+  font-size: 1.4rem;
+  justify-content: space-between;
+  font-family: mulish;  
+  padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-right: 1.6rem ;
+    padding-left: 1.6rem;
+    position: relative;
+	text-align: center;
+	background-color: #f2f2f2;
+	color: #999;
+    border-radius: 4px;
+    margin-bottom: 3rem;
+  }
+  
+  .p8 {
+    position: absolute;
+  }
+  ul{
+      font-size: 1.4rem;
+    flex-direction: row;
+    text-align: center;   
+  }
+  li {
+    list-style: none;
+      border-radius: 4px;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding-right: 1.6rem ;
+      padding-left: 1.6rem;
+    display: inline;
+    margin-left: 1rem;
+    position: relative;
+    
+    
+  }
+  li {
+      background-color: #ffffff;
+  }
+  li:hover 
+      {
+      background-color: rgb(2, 196, 255, 0.3);
+      transition: .6s;
+      }
+  
+  .logo {
+    position: absolute;
+      width: 5rem;
+      height: 5rem;
+    padding-top: 1rem;
+      padding-bottom: 1rem; 
+  }
+  .logonazwa {
+     position: absolute;
+      font-family: lexend deca;
+      font-weight: 600;
+  
+  }
+
 	/* Reset stylów */
 * {
-	font-family:'Lexend Deca', sans-serif;
-	margin: 0;
-	padding: 0;
+	font-family:Mulish;
 	box-sizing: border-box;
 	cursor:pointer;
-}
-
-/* Styl nagłówka */
-header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 40px;
-	background-color: #f2f2f2;
-	
-}
-
-/* Styl logo */
-.logo a {
-	font-size: 24px;
-	font-weight: bold;
-	color: #333;
-	text-decoration: none;
-}
-
-/* Styl nawigacji */
-nav ul {
-	display: flex;
-}
-
-nav li {
-	padding-right: 20px;
-	margin-left: 60px;
-	list-style: none;
-}
-
-nav a {
-	font-size: 20px;
-	color: #333;
-	text-decoration: none;
-}
-
-nav a:hover {
-	color: #0077b5;
 }
 
 /* Styl sekcji głównej */
 main {
 	padding-top: 2.5%;
-	margin:auto;
 
 }
+h1 {
+			color:rgb(0, 119, 181) ;
+			position: relative;
+			font-size: 2REM;
+			font-family: mulish;
+			display: inline-block;
+			font-weight: 700;
+			background-color: rgb(2, 196, 255, 0.2);
+			padding-top: 1rem ;
+			padding-bottom: 1rem;
+			padding-left: 3rem;
+			padding-right: 3rem;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+			border-radius: 0.4rem;
+			
+				
+		}
 
-
-/* Styl stopki */
-footer {
-	padding: 20px;
-	text-align: center;
-	background-color: #f2f2f2;
-	color: #999;
-	font-size: 14px;
+.tabelka {
+    text-align: center;
 }
-
+.komórka:hover {
+    color: #00acca;
+}
 table {
-            background-color:rgb(207, 242, 253);
-            width: 70%;
-            margin: 2% auto;
-            font-size: 25px;
-            border-radius: 15px;
-        }
-        td {
-            padding: 20px 20px 20px 20px;
-			
-        }
-        th {
-            font-size:20px;
-            padding: 30px 30px 30px 20px;
-        }
-        .komórka:hover {
-            background-color:rgb(255, 255, 255);
-            
-        }
-        img {
-            width: 120px;
-            height: 120px;
-        }
-      
+    background-color:rgb(207, 242, 253);
+    border-radius: 4px;
+    font-family: lexend deca;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 4rem;
+    margin-top: rem;
+    margin-right: 1.5rem ;
+    margin-left: 1.5rem ;
+    padding-bottom: 1rem;
+	
+	
 
-        li:hover {
-            color:  #02c4ff;
-			
-        
-        }
+}
+th {
+    font-size: 1.5rem;
+    padding-top:2rem;
+    padding-bottom: 2rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    color: #333;
+    
+}
+td {
+    font-size:1.5rem ;
+    padding-top: 1rem ;
+    padding-bottom: 1rem ;
+    padding-right: 1rem ;
+    padding-left: 1rem; 
+	 
+}
+
+
+.komórka:hover {
+    background-color:rgb(255, 255, 255);
+    
+}
+.obrazek {
+    width: 6rem;
+    height: 6rem;
+}
       
         .tabelka {
             margin-left: auto;
@@ -119,34 +194,47 @@ table {
 			display:inline;
 			flex-direction: column;
 			text-align: center;
-			display: flex;
-			font-size: 150%;
+            
 			 
 		}
 		p {
-			font-size: 30px;
-			padding-top: 15px;
+			font-size: 1.2rem;
 			
 		}
 		.podpis 
 		{
-			font-size: 20px;
+			font-size: 1.2rem;
 			color: #999;
+            margin-bottom: 1rem;
+            line-height: 0rem;
 		}
 
 		.komórka:hover {
 			color: #00acca;
 		}
 		
+.białe {
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 55rem;
+    background-color: rgb(255, 255, 255) ;
+    margin-left: auto;
+    margin-right: auto
+}
+
+	
 </style>
 </head>
 <body>
-	<header>
+    <header>
 		<div class="logo">
 			<a href="#">Logo</a>
 		</div>
 		<nav>
+        
 			<ul>
+            
 				<li><a href="index.html">Strona główna</a></li>
 				<li><a href="Oferta.html">Oferta</a></li>
 				<li><a href="Cennik.html">Cennik</a></li>
@@ -158,116 +246,113 @@ table {
 	<main><div class="treść">
 	<div class="text">
 	<h1>CENNIK</h1>
-	<p>Zapoznaj się z naszą ofertą prania tapicerki meblowej, dywanów i materacy w Warszwie i okolicach.</p><br>
-	<P class="podpis">Masz pytania dotyczące wyceny? Sprawdż zakładkę PYTANIA.<br> Chcesz zamówić pranie? Sprawdź zakładkę KONTAKT.<br>
-		 UWAGA! Niektóre z plam są niemożliwe do usunięcia do stanu pierwotnego.
-		Więcej o rodzajach plam i zanieczyszczeń znajdziesz w zakładce PYTANIA.</P>
-		</div></main>
-		<table class="tabelka">
-			<tr class="nagłówek">
-				<th>Oferta prania</th>
-				<th></th>
-				<th>Cena</th>
-			</tr>
-			<tr class="komórka">
-			<td><img src="ikonki mebli/Krzesło bez oparcia.png"> </td>
-			<td> Krzesło bez oparcia</td>
-			<td> 10 zł</td>
-			</tr>
-			<tr class="komórka">
-			<td> <img src="ikonki mebli/Krzesło.png"></td>
-			<td> Krzesło z oparciem </td>
-			<td> 15 zł</td>
-			</tr>
-			<tr class="komórka">
-			<td><img src="ikonki mebli/Krzesło biurowe.png"> </td>
-			<td> Krzesło biurowe</td>
-			<td> 20 zł</td>
-			</tr>
-			<tr class="komórka">
-				<td><img src="ikonki mebli/Naroznik mały.png"></td>
-				<td>Mały narożnik</td>
-				<td>120 zł</td>
-			</tr>
-			<tr class="komórka">
-				<td><img src="ikonki mebli/Naroznik duży.png"></td>
-				<td>Duży narożnik</td>
-				<td>150 zł</td>
-			</tr>
-			<tr class="komórka">
-				<td><img src="ikonki mebli/Kanapa 2osobowa.png"></td>
-				<td>Kanapa 2-osobowa</td>
-				<td>90 zł</td>
-			</tr>
-			<tr class="komórka">
-				<td><img src="ikonki mebli/Kanapa 3osobowa.png"></td>
-				<td>Kanapa 3-osobowa</td>
-				<td>120 zł</td>
-			</tr>
-			<tr class="komórka">
-				<td><img src="ikonki mebli/Wersalka.png"></td>
-				<td>Wersalka</td>
-				<td>90 zł</td>
-			</tr>
-			<tr class="komórka">
-				<td><img src="ikonki mebli/Poduszka.png"></td>
-				<td>Poduszka</td>
-				<td>8 zł</td>
-			</tr>
-			<tr class="komórka">
-				<td><img src="ikonki mebli/Puf.png"></td>
-				<td>Pufa, podnóżek</td>
-				<td>15 zł</td>
-			</tr>
-			<tr class="komórka">
-				<td><img src="ikonki mebli/Mały fotel.png"></td>
-				<td>Mały fotel</td>
-				<td>40 zł</td>
-			</tr>
-			<tr class="komórka">
-				<td><img src="ikonki mebli/Duży fotel.png"></td>
-				<td>Duży fotel</td>
-				<td>70 zł</td>
-			</tr>
-			<tr class="komórka">
-				<td><img src="ikonki mebli/Materac.png"></td>
-				<td> Materac 1-osobowy</td>
-				<td><p>60 zł za 1 stronę</p>
-				<p>110 zł za 2 strony</p></td>
-			</tr>
-			<tr class="komórka">
-				<td><img src="ikonki mebli/Materac.png"></td>
-				<td> Materac 2-osobowy</td>
-				<td><p>70 zł za 1 stronę</p>
-					<p>120 zł za 2 strony</p></td>
-			</tr>
-			<tr class="komórka">
-				<td><img src="ikonki mebli/Fotelik.png"></td>
-				<td>Fotelik samochodowy</td>
-				<td>50 zł</td>
-			</tr>
-			<tr class="komórka">
-				<td><img src="ikonki mebli/Wózek dziecięcy.png"></td>
-				<td>Wózek dziecięcy</td>
-				<td>60 zł</td>
-			</tr>
-			<tr class="komórka">
-				<td><img src="ikonki mebli/Dywan.png"></td>
-				<td>Dywan</td>
-				<td><p>od 6 zł/m2 do 18 zł/m2</p>
-				<p>cena indywidualna</p>
-				</td>
-			</tr>
-		   
-		
-			</table>
-
-		
-		</div>	
-	
-
-	<footer>
+	<p>Sprawdź ceny prania tapicerki meblowej w Warszawie i okolicach.</p>
+    <P class="podpis"> Chcesz zamówić pranie? Sprawdź zakładkę KONTAKT.</P>
+</div></main>
+<div class="białe">
+    <table class="tabelka">
+        <tr class="nagłówek">
+            <th class="ofertaprania">Oferta prania</th>
+            <th></th>
+            <th>Cena</th>
+        </tr>
+        <tr class="komórka">
+        <td><img src="ikonki mebli/Krzesło bez oparcia.png" class="obrazek"> </td>
+        <td> Krzesło bez oparcia</td>
+        <td> 10 zł</td>
+        </tr>
+        <tr class="komórka">
+        <td> <img src="ikonki mebli/Krzesło.png" class="obrazek"></td>
+        <td> Krzesło z oparciem </td>
+        <td> 15 zł</td>
+        </tr>
+        <tr class="komórka">
+        <td><img src="ikonki mebli/Krzesło biurowe.png" class="obrazek"> </td>
+        <td> Krzesło biurowe</td>
+        <td> 20 zł</td>
+        </tr>
+        <tr class="komórka">
+            <td><img src="ikonki mebli/Naroznik mały.png" class="obrazek"></td>
+            <td>Mały narożnik</td>
+            <td>120 zł</td>
+        </tr>
+        <tr class="komórka">
+            <td><img src="ikonki mebli/Naroznik duży.png" class="obrazek"></td>
+            <td>Duży narożnik</td>
+            <td>150 zł</td>
+        </tr>
+        <tr class="komórka">
+            <td><img src="ikonki mebli/Kanapa 2osobowa.png" class="obrazek"></td>
+            <td>Kanapa 2-osobowa</td>
+            <td>90 zł</td>
+        </tr>
+        <tr class="komórka">
+            <td><img src="ikonki mebli/Kanapa 3osobowa.png" class="obrazek"></td>
+            <td>Kanapa 3-osobowa</td>
+            <td>120 zł</td>
+        </tr>
+        <tr class="komórka">
+            <td><img src="ikonki mebli/Wersalka.png" class="obrazek"></td>
+            <td>Wersalka</td>
+            <td>90 zł</td>
+        </tr>
+        <tr class="komórka">
+            <td><img src="ikonki mebli/Poduszka.png" class="obrazek"></td>
+            <td>Poduszka</td>
+            <td>8 zł</td>
+        </tr>
+        <tr class="komórka">
+            <td><img src="ikonki mebli/Puf.png" class="obrazek"></td>
+            <td>Pufa, podnóżek</td>
+            <td>15 zł</td>
+        </tr>
+        <tr class="komórka">
+            <td><img src="ikonki mebli/Mały fotel.png" class="obrazek"></td>
+            <td>Mały fotel</td>
+            <td>40 zł</td>
+        </tr>
+        <tr class="komórka">
+            <td><img src="ikonki mebli/Duży fotel.png" class="obrazek"></td>
+            <td>Duży fotel</td>
+            <td>70 zł</td>
+        </tr>
+        <tr class="komórka">
+            <td><img src="ikonki mebli/Materac.png" class="obrazek"></td>
+            <td> Materac 1-osobowy</td>
+            <td>60 zł za 1 stronę<br>
+            110 zł za 2 strony</td>
+        </tr>
+        <tr class="komórka">
+            <td><img src="ikonki mebli/Materac.png" class="obrazek"></td>
+            <td> Materac 2-osobowy</td>
+            <td>70 zł za 1 stronę<br>
+                120 zł za 2 strony</td>
+        </tr>
+        <tr class="komórka">
+            <td><img src="ikonki mebli/Fotelik.png" class="obrazek"></td>
+            <td>Fotelik samochodowy</td>
+            <td>50 zł</td>
+        </tr>
+        <tr class="komórka">
+            <td><img src="ikonki mebli/Wózek dziecięcy.png" class="obrazek"></td>
+            <td>Wózek dziecięcy</td>
+            <td>60 zł</td>
+        </tr>
+        <tr class="komórka">
+            <td><img src="ikonki mebli/Dywan.png" class="obrazek"></td>
+            <td>Dywan</td>
+            <td>od 6 zł/m2 do 18 zł/m2<br>
+             cena indywidualna </td>
+        </tr>
+       
+    </table>
+    <footer>
 		<p> Pranie Biały Miś +48 519 551 915</p>
 	</footer>
+</div class="białe">
+
+</div>	
+
+
 </body>
 </html>
