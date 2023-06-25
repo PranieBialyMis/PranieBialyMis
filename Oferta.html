@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Oferta</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
-
+body {
+    height: 400%;
+    position: absolute;
+    width: 100%;
+    background-color: #ffffff98;
+}
 header {
   position: sticky;
   flex-direction: row;
@@ -18,9 +24,8 @@ header {
   background-color: rgb(242, 242, 242, 0.8);
   padding-top: 2rem; 
   padding-bottom: 2rem;
-  margin-right: -2rem;
-  margin-left: -1rem;
   margin-bottom: 1rem;
+  width: 100%;
   }
   header a {
     color: #333;
@@ -31,11 +36,27 @@ header {
       color: #0077B5;
       
   }
+  footer {
+    bottom: 0px;
+  font-size: 1.4rem;
+  justify-content: space-between;
+  font-family: mulish;  
+  padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-right: 1.6rem ;
+    padding-left: 1.6rem;
+    position: relative;
+	text-align: center;
+	background-color: #f2f2f2;
+	color: #999;
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+  }
+  
   .p8 {
     position: absolute;
   }
   ul{
-    margin-right: -30%;
       font-size: 1.4rem;
     flex-direction: row;
     text-align: center;   
@@ -49,6 +70,7 @@ header {
       padding-left: 1.6rem;
     display: inline;
     margin-left: 1rem;
+    position: relative;
     
     
   }
@@ -75,9 +97,17 @@ header {
   
   }
  .ofertapojemnik {
-    margin-left: 20% ;
-    margin-right: 20% ;
-    position: relative;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto;
+  width: 80rem;
+    
+  
+
+    
     
  }
 
@@ -244,8 +274,10 @@ border-radius: 4px;
                                     </div class="treścobraz">
 
                             </div class="elementy">
+                        </div class="ofertatreść">
 
                     </div class="oferta1">
+                    <div  class="ofertatreść">
                     <h1  class="ofertatytuł">PRANIE DYWANÓW I WYKŁADZIN -</h1>
                     <p class="pytania2">Jak długo schnie dywan? Ile trwa wypranie wykładziny?
                         <br>Sprawdź odpowiedzi na pytania o praniu dywanu <a href="index.html#tabelka1"><button>►</button></a></p>
@@ -358,8 +390,11 @@ border-radius: 4px;
 
                     </div class="oferta5">
 
-</div>
-</div>
+                
+</div class="ofertapojemnik">
 
 </body>
+<footer>
+    <p9> Pranie Biały Miś +48 519 551 915</p9>
+</footer>
 </html>
