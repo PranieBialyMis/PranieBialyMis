@@ -5,110 +5,191 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Pytania</title>
-	<link rel="stylesheet" href="style.css">
-	
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">	
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel="stylesheet">
 <style>
+  footer {
+    bottom: 0px;
+  font-size: 1.4rem;
+  justify-content: space-between;
+  font-family: mulish;  
+  padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-right: 1.6rem ;
+    padding-left: 1.6rem;
+    position: relative;
+	text-align: center;
+	background-color: #f2f2f2;
+	color: #999;
+    border-radius: 4px;
+    margin-bottom: 3rem;
+  }
+
+  body {
+    height: 500%;
+    position: absolute;
+    width: 100%;
+    background-color: #ffffff98;
+}
+header {
+  position: sticky;
+  flex-direction: row;
+  top: 0px;
+  border-radius: 0;
+  z-index: 1;
+  font-size: 1.4rem;
+  justify-content: space-between;
+  font-family: mulish; 
+  background-color: rgb(242, 242, 242, 0.8);
+  padding-top: 2rem; 
+  padding-bottom: 2rem;
+  
+  width: 100%;
+  }
+  header a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  header a:hover {
+      color: #0077B5;
+      
+  }
+  .p8 {
+    position: absolute;
+  }
+  .n1{
+      font-size: 1.4rem;
+    flex-direction: row;
+    text-align: center;   
+  }
+  .n0 {
+    list-style: none;
+      border-radius: 4px;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding-right: 1.6rem ;
+      padding-left: 1.6rem;
+    display: inline;
+    margin-left: 1rem;
+    position: relative;
+    
+    
+  }
+  .n0 {
+      background-color: #ffffff;
+  }
+  .n0:hover:hover 
+      {
+      background-color: rgb(2, 196, 255, 0.3);
+      transition: .6s;
+      }
+	.logo {
+    position: absolute;
+      width: 5rem;
+      height: 5rem;
+    padding-top: 1rem;
+      padding-bottom: 1rem; 
+  }
+  .logonazwa {
+     position: absolute;
+      font-family: lexend deca;
+      font-weight: 600;
+  
+  }
+
 	/* Reset stylów */
 * {
-	font-family:'Lexend Deca', sans-serif;
-	margin: 0;
-	padding: 0;
+	font-family:Mulish;
 	box-sizing: border-box;
 	cursor:pointer;
-}
-
-/* Styl nagłówka */
-header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 40px;
-	background-color: #f2f2f2;
-	
-}
-
-/* Styl logo */
-.logo a {
-	font-size: 24px;
-	font-weight: bold;
-	color: #333;
-	text-decoration: none;
-}
-
-/* Styl nawigacji */
-nav ul {
-	display: flex;
-}
-
-nav li {
-	padding-right: 20px;
-	margin-left: 60px;
-	list-style: none;
-}
-
-nav a {
-	font-size: 20px;
-	color: #333;
-	text-decoration: none;
-}
-
-nav a:hover {
-	color: #0077b5;
 }
 
 /* Styl sekcji głównej */
 main {
 	padding-top: 2.5%;
-	margin:auto;
 
 }
 
-
-/* Styl stopki */
-footer {
-	padding: 20px;
-	text-align: center;
-	background-color: #f2f2f2;
-	color: #999;
-	font-size: 14px;
-}
       
 
-        li {
-            color:  #0077b5;
+    	.pytki {  
+			font-weight: 700;
+			
 			
         
         }
 		h1 {
-			color:#0077b5 ;
-			text-shadow: 4px 4px 0px rgba(0, 119, 181, 0.315);
-			
+			color:rgb(0, 119, 181) ;
+			position: relative;
+			font-size: 2REM;
+			font-family: mulish;
+			display: inline-block;
+			font-weight: 700;
+			background-color: rgb(2, 196, 255, 0.2);
+			padding-top: 1rem ;
+			padding-bottom: 1rem;
+			padding-left: 3rem;
+			padding-right: 3rem;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+			border-radius: 0.4rem;	
 		}
 		.treść {
 			display:inline;
 			flex-direction: column;
 			text-align: center;
-			display: flex;
 			font-size: 150%;
 			 
 		}
 		p {
-			font-size: 24px;
-			padding-top: 15px;
+			font-size: 1.2rem;
 			
 		}
 		.podpis 
 		{
-			font-size: 24px;
+			font-size: 1.2rem;
 			color: #999;
-            margin-bottom: 2.5%;
+            margin-bottom: 2rem;
+            line-height: 0rem;
 		}
 .pytania {
-    margin-left: 25%;
-    margin-right: 25%;
-    font-size: 24px;
+	align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 1.4rem;
+	text-align: justify;
+}
+.temat1 {
+	box-sizing: border-box;
+    border-radius: 0.4rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(2, 196, 255, 0.3) -1rem 1rem 0rem;
+    margin-bottom: 7rem;
+	
+    border-width: 0.4rem;
+    border-style: dashed;
+    border-color: #00a7da;
+	padding-left: 3rem;
+	padding-top: 2rem;
+	padding-right: 3rem;
+
+}
+.białe {
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: rem;
+    width: 80rem;
+    height: 221.5rem ;
+    background-color: white ;
+    border-width: 1.5rem;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: rgb(207, 242, 253);
+    margin-left: auto;
+    margin-right: auto;
 }
 		
 </style>
@@ -119,12 +200,14 @@ footer {
 			<a href="#">Logo</a>
 		</div>
 		<nav>
-			<ul>
-				<li><a href="index.html">Strona główna</a></li>
-				<li><a href="Oferta.html">Oferta</a></li>
-				<li><a href="Cennik.html">Cennik</a></li>
-				<li><a href="Pytania.html">Pytania</a></li>
-				<li><a href="Kontakt.html">Kontakt</a></li>
+        
+			<ul class="n1">
+            
+				<li class="n0"><a href="index.html">Strona główna</a></li>
+				<li class="n0"><a href="Oferta.html">Oferta</a></li>
+				<li class="n0"><a href="Cennik.html">Cennik</a></li>
+				<li class="n0"><a href="Pytania.html">Pytania</a></li>
+				<li class="n0"><a href="Kontakt.html">Kontakt</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -136,38 +219,78 @@ footer {
 		</div></main>
         <div>
         <ul class="pytania">
-            <li>Ile trwa pranie? </li> 
+			<div class="temat1">
+            <li class="pytki">Ile trwa pranie? </li> 
             <p>Czas wykonywanego prania zalezy od rodzaju, wielkosci oraz poziomu zabrudzenia mebla.
                 Pranie kanapy trwa zazwyczaj godzinę, pranie naroznika półtorej godziny. Pranie materaca trwa</p><br>
-            <li>Gdzie jest wykonywane pranie?</li>
+            <li class="pytki">Gdzie jest wykonywane pranie?</li>
             <p>Pranie mebli jest zawsze wykonywane u klienta. W przypadku kanap. foteli, dywanów, materacy,
                 wózków i podnóżków proces czyszczenia przebiega na miejscu. Nie ma możliwości zabrania mebla i odwiezienia go po wypraniu.
                 W przypadku sytuacji wyjatkowych i mniejszych obiektów (takich jak np. poduszki w duzej ilości z restauracji) istnieje
                 możliwość przeprowadzenia prania poza docelowym miejscem połóżenia obiektu.</p><br>
-            <li>Czy dojazd jest dodatkowo płatny?</li>
+            <li class="pytki">Czy dojazd jest dodatkowo płatny?</li>
             <p>Dojazd na terenie całej Warszawy jest bezpłatny. Dojeżdżamy również na obrzeża oraz miejscowości położone w okolicy Warszawy w przypadku zamówień powyżej 120zł.
                 Jeżeli masz wątpliwości dotyczące dojazdu napisz do nas wchodząc w zakładkę Kontakt.</p><br>
-            <li>Jakie środki są używane do prania?</li>
+            <li class="pytki">Jakie środki są używane do prania?</li>
             <p>Środki używane do prania to profesjonalne produkty takich firm jak.:
                 Sa one w pełni bezpieczne dla dzieci, zwierzat oraz alergików. Po praniu środki są w pełni wypłukane z obiektu,
                 tak aby żadna ilość płynu do czyszczenia nie pozostała w meblu.</p><br>
-            <li>Jak przygotowac sie do prania?</li>
+			</div class="temat1">
+			<div class="temat1">
+            <li class="pytki">Jak przygotowac sie do prania?</li>
             <p>W przypadku prania kanapy lub narożnika warto wyjąć wszystko co się w nim znajduję,
                 tak aby miec pewność, że żadna  z rzeczy nie zostanie zmoczona. Oczywiście warto pozostawic swobodny dostep do mebla z każdej strony, która ma zostac wyprana. 
                 Do wyprania mebla potrzeba stałego dostepu do ciepłej wody i kanalizacji, tak aby wylać wode z zanieczyszczeniami z odkurzacza.</p><br>
-            <li>Nie widze mojego mebla w cenniku, co mam zrobić?</li>
+            <li class="pytki">Nie widze mojego mebla w cenniku, co mam zrobić?</li>
             <p>Jeżeli twój mebel nie występuje w cenniku zgłoś sie do nas bezpośrednio przez formularz kontaktowy.
 				Udzielimy ci odpowiedzi na wszystkie pytania, dowiesz sie czy mamy możliwość wyprania twojej rzeczy.</p><br>
-            <li>Jakie formy płatności przyjmujecie?</li>
+            <li class="pytki">Jakie formy płatności przyjmujecie?</li>
             <p>Honorujemy płatności gotówką oraz przelewem bankowym.</p><br>
-            <li>Czy mogę wyprać naturalny, tkany dywan?</li>
-            <p>Niestety, nie zajmujemy się praniem dywanów, które sa szczególnie narażone na zniszczenie podczas prania.
-				Takie dywany warto oddać do prani, która zajmuje się praniem metodą na sucho lub specjalizuje w materiałach naturalnych. </p><br>
-            <li></li>
-            <p></p><br>
-            <li></li>
-            <p></p><br>
-			<li></li>
+			
+		</div class="temat1">
+		<h1>PRANIE DYWANÓW I WYKŁADZIN</h1><br>
+		<div class="temat1">
+            <li class="pytki">Czy mogę wyprać naturalny, tkany dywan?</li>
+            <p>Niestety, nie zajmujemy się praniem dywanów, które są szczególnie narażone na zniszczenie podczas prania np. z wełny lub wiskozy.
+				Takie dywany warto oddać do pralni, która zajmuje się praniem metodą na sucho lub specjalizuje się w czyszczeniu materiałów naturalnych. </p><br>
+				<li class="pytki">Czy dywan prany jest na miejscu, czy zabieracie go ze sobą?</li>
+            <p>Wszystkie dywany, wykładziny oraz chodniki pierzemy stacjonarnie u klienta.</p><br>
+            <li class="pytki">Jaki jest koszt prania dywanu/wykładziny?</li>
+            <p> Koszt prania dywanu zależy od rodzaju materiału, długosci włosia, poziomu zabrudzenia oraz powierzchni jaka jest do wyprania. Cena rozpoczna się od 6zł, a kończy na 20 zł za metr kwadratowy. Koszt prania jest ustalany indywidualnie, zachęcamy do bezpośredniego kontaktu. </p><br>
+			<li class="pytki">Ile schnie dywan po praniu?</li>
+			<p>Czas schnięcia dywanu wynosi 10-15 godzin od wyprania. Najlepiej pozostawić dywan na cały dzien do wyschnięcia i go nie zwijać. Zwinięty dywan nie wysuszy się odpowiednio. Moze pozostać w nim wilgoć, sprzyjająca zbieraniu sie bakterii i grzybów.</p><br>
+			<li class="pytki">Mam drewnianą podłogę, czy podczas prania nie zostanie zniszczona?</li>
+			<p>Nie, podczas prania dywanów zachowujemy dodatkową ostrożność. Podłoga jest zabezpieczana przy pomocy folii i ręczników. Nie było sytuacji, w której nasi klienci mieli zniszczoną podłogę po praniu.</p><br>
+		</div class="temat1">
+
+
+		<h1>PRANIE TAPICERKI MEBLOWEJ</h1><br>
+		<div class="temat1">
+            <li class="pytki">Ile trwa pranie tapicerki meblowej?</li>
+            <p>Niestety, nie zajmujemy się praniem dywanów, które są szczególnie narażone na zniszczenie podczas prania np. z wełny lub wiskozy.
+				Takie dywany warto oddać do pralni, która zajmuje się praniem metodą na sucho lub specjalizuje się w czyszczeniu materiałów naturalnych. </p><br>
+				<li class="pytki">Czy moja tapicerka nadaje sie do prania?</li>
+            <p>Wszystkie dywany, wykładziny oraz chodniki pierzemy stacjonarnie u klienta.</p><br>
+            <li class="pytki">Mam mebel tapicerowany, którego nie ma w cenniku, co mam zrobić?</li>
+            <p> Koszt prania dywanu zależy od rodzaju materiału, długosci włosia, poziomu zabrudzenia oraz powierzchni jaka jest do wyprania. Cena rozpoczna się od 6zł, a kończy na 20 zł za metr kwadratowy. Koszt prania jest ustalany indywidualnie, zachęcamy do bezpośredniego kontaktu. </p><br>
+			<li class="pytki">Czy pierzecie antyczne meble?</li>
+			<p>Czas schnięcia dywanu wynosi 10-15 godzin od wyprania. Najlepiej pozostawić dywan na cały dzien do wyschnięcia i go nie zwijać. Zwinięty dywan nie wysuszy się odpowiednio. Moze pozostać w nim wilgoć, sprzyjająca zbieraniu sie bakterii i grzybów.</p><br>
+			<li class="pytki">W jaki sposób jest wykonywane pranie tapicerki?</li>
+			<p>Nie, podczas prania dywanów zachowujemy dodatkową ostrożność. Podłoga jest zabezpieczana przy pomocy folii i ręczników. Nie było sytuacji, w której nasi klienci mieli zniszczoną podłogę po praniu.</p><br>
+			<li class="pytki">Mam pikowany fotel do wyprania, czy pierzecie takie meble?</li>
+			<p></p><br>
+			<li class="pytki">Ile schnie tapicerka meblowa po upraniu?</li>
+			<p></p><br>
+			<li class="pytki">Czy każda plama zejdzie po praniu?</li>
+			<p></p><br>
+			<li class="pytki">Czy każdy zapach zejdzie po praniu?</li>
+			<p></p><br>
+			<li class="pytki">Jak mam przygotowaś się do prania?</li>
+			<p></p><br>
+			<li class="pytki"></li>
+			<p></p><br>
+		</div class="temat1">
+		
         </ul>
         </div>
 		</div>	
