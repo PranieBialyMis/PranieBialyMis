@@ -1,750 +1,52 @@
 <!DOCTYPE html>
+<html lang="pl">
 <head>
-    <link href='https://fonts.googleapis.com/css?family=Lexend Deca|Lexend Deca|Lexend:300,400,500,700,900"' rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
- <style>
+	<title>Cennik</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">	
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel="stylesheet">
+<style>
 
-.container {
-  max-width: 1536px;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-header {
-position: sticky;
-display: flex;
-flex-direction: row;
-top: 0px;
-margin-left: 0rem;
-margin-right: -1rem;
-border-radius: 0;
-z-index: 1;
-font-size: 2rem;
-align-items: center;
-justify-content: space-between;
-font-family: oswald; 
-background-color: rgb(242, 242, 242, 0.8);
-
-}
-header a {
-	color: #333;
-	text-decoration: none;
-}
-
-header a:hover {
-    color: #0077B5;
-    
-}
-
-li, ul {
-	list-style: none;
-    display: flex;
-    margin-left: 2rem;
-    border-radius: 0.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-right: 2rem ;
-    padding-left: 2rem;
-}
-li {
-    background-color: #ffffff;
-}
-li:hover 
-    {
-    background-color: rgb(2, 196, 255, 0.3);
-    transition: .6s;
-    }
-
-.logo {
-    width: 5rem;
-    height: 5rem; 
-}
-.logonazwa {
-    display: flex;
-    font-family: lexend deca;
-    font-weight: 600; 
-}
-p8 {
-   position: absolute;
-
-}
-.wizytówka {
-    display: table;
-    align-items: center;
-    width: 80rem;
-    height: 38rem;
-    margin-left: auto;
-    margin-right: auto;
-    color: #333;
-    margin-bottom: 7REM;
-
-    
-}
-.tło1 {
-    width: 80rem;
-    height: 38rem;
+body {
+    height: 250%;
     position: absolute;
-    z-index: -1;
-    border-radius: 20px;
-    opacity: 70%;
+    width: 100%;
+    background-color: #ffffff98;
 }
-h1 {
+header {
+  position: sticky;
+  flex-direction: row;
+  top: 0px;
+  border-radius: 0;
+  z-index: 1;
+  font-size: 1.4rem;
+  justify-content: space-between;
+  font-family: mulish; 
+  background-color: rgb(242, 242, 242, 0.8);
+  padding-top: 2rem; 
+  padding-bottom: 2rem;
   
-    padding-left: 1rem ;
-    padding-right: 1rem ;
-    padding-top: 0.8rem;
-    padding-bottom: 0.5rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    background-color: rgb(2, 196, 255, 0.3);
-    border-radius: 0.8rem;
-    text-align: center;
-    font-size: 3rem ;
-    font-family: lexend deca;
-}
-p {
-    
-    margin-left: 3.2rem;
-    margin-right: 3.2rem;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem ;
-    padding-left: auto;
-    padding-right: auto;
-    font-size: 3rem;
-    line-height: 4rem;
-    font-family: oswald;
-    letter-spacing: 0.1rem;
-    background-color: rgba(255, 255, 255, 0.85);
-    border-radius: 0.8rem;
-    font-weight: 400;
-    text-align: center;
-    margin-top: 6rem;
-    
-}
-
-p:hover {
-    filter: brightness(1.2);
-  -webkit-filter: brightness(1.2);
-  -webkit-box-shadow: 0px 0px 64px -10px rgb(255, 255, 255);
--moz-box-shadow: 0px 0px 64px -10px rgb(255, 255, 255);
-box-shadow: 0px 0px 64px -10px rgb(255, 255, 255);
-}
-
-
-button {
-    margin-top: 4.5rem;
-	font-size: 1.5REM;
-	margin-left: 4.4REM;
-}
-/* CSS */
-button {  
-  appearance: button;
-  background-color: #00a7da;
-  border: solid transparent;
-  border-radius: 1rem;
-  border-width: 0 0 10px;
-  color: #FFFFFF;
-  cursor: pointer;
-  font-family: din-round,sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.125rem;
-  line-height: 1.25rem;
-  outline: none;
-  padding: 20px 30px;
-  text-transform: uppercase;
-  touch-action: manipulation;
-  transform: translateZ(0);
-  transition: filter .2s;
-  user-select: none;
-  -webkit-user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
-}
-
-button:after {
-  background-clip: padding-box;
-  background-color: #02c4ff;
-  border: solid transparent;
-  border-radius: 1rem;
-  border-width: 0 0 4px;
-  bottom: -4px;
-  content: "";
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: -1;
-}
-
-button:focus {
-  user-select: auto;
-}
-
-button:hover:not(:disabled) {
-  filter: brightness(1.1);
-  -webkit-filter: brightness(1.1);
-  -webkit-box-shadow: 0px 0px 64px -10px rgba(0, 119, 181, 1);
--moz-box-shadow: 0px 0px 64px -10px rgba(0, 119, 181, 1);
-box-shadow: 0px 0px 64px -10px rgba(0, 119, 181, 1);
-}
-
-button:disabled {
-  cursor: auto;
-}
-.pracamis2 {
-    font-family: lexend deca;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-   
-}
-.notka {
-    background-color: #FFFFFF;
-    margin-top: 4rem ;
-    margin-left: 1rem ;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    width: 24rem ;
-    height: 26rem;
-    padding-bottom: -1rem;
-    padding-top: 2rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem ;
-    border-radius: 2rem;
-    font-size: 1.6rem;
-    align-items: baseline;
-    text-align: center;
-    line-height: 2.6rem;
-    border-width: 0.5rem;
-    border-style: dashed;
-    border-color: #00a7da;
-    
-}
-.notka:hover {
-    box-shadow: rgb(2, 196, 255, 0.6) 0rem 1rem 4rem -12px;
-} 
-.białe {
-    align-items: center;
-    margin-top: 3rem;
-    margin-bottom: rem;
-    width: 80rem;
-    height: 221.5rem ;
-    background-color: white ;
-    border-width: 1.5rem;
-    border-style: solid;
-    border-color: rgb(207, 242, 253);
-    border-radius: 1.5rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-.znak1 {
-    width: 4rem;
- 
-}
-.znak2 {
-    width: 6rem;
-   
-}
-.znak3 {
-    width: 5rem;
-    
-}
-
-.znak1, .znak2, .znak3 {
-margin-bottom: 1rem;
-}
-
-.images  {
-    display: none;
-}
-.podpokaz {
-    background-color: rgb(242, 242, 242, 0.8);
-    height: 36rem;
-    margin-left: -1rem;
-    margin-right: -1rem;
-    
-
-}
-.pokaz {
-      	border-radius: 2rem;
-        position: relative;
-        width: 30rem;
-        margin-left: 20rem;
-      }
-      
-      /* pojemniczek na pokaz slajdów */
-      .carousel  {
-         width: 25rem;
-         max-height: 30rem;
-         position: relative;
-         margin-top: 2rem;
-         padding-top: 2rem;
-         left: 50%;
-        transform: translateX(-50%);
-      }
-      
-      /* Przyciski dalej i wstecz */
-      .wstecz, .dalej {
-         cursor: pointer;
-         position: absolute;
-         top: 14rem;
-         padding-top: 0.5rem;
-         padding-bottom: 0.5rem;
-         padding-left: 1rem;
-         padding-right: 1rem;
-         color: #0077B5;
-         font-weight: bold;
-         font-size: 3rem;
-         transition: 0.6s ease;
-         user-select: none;
-         margin-left: 20rem;
-      }
-      
-      /* pozycja przycisku dalej */
-      .dalej {
-        left: 120% ;
-         border-radius: 1rem;
-      }
-
-      /* pozycja przycisku wstecz */
-      .wstecz {
-        right: 20%;
-         border-radius: 1rem;
-      }
-      
-      .wstecz:hover, .dalej:hover {
-         background-color: rgb(2, 196, 255, 0.3);
-      }
-      
-      .kropkirazem {
-        margin-left: 38.5rem; 
-      }
-      .kropka {
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        cursor: pointer;
-         height: 15px;
-         width: 15px;
-         margin: 0.5rem 0.2rem;
-         background-color: rgb(2, 196, 255, 0.3);
-         border-radius: 10rem;
-         display: inline-block;
-         transition: background-color 0.6s ease;
-      }
-      .wybrana, .kropka:hover {
-         background-color: #0077B5;
-      }
-
-.tabelka {
-    text-align: center;
-}
-.komórka:hover {
-    color: #00acca;
-}
-table {
-    background-color:rgb(207, 242, 253);
-    border-radius: 15px;
-    font-family: lexend deca;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin-bottom: 4rem;
-    margin-top: 1.5rem;
-    margin-right: 1.5rem ;
-    margin-left: 1.5rem ;
-
-}
-th {
-    font-size: 2.4rem;
-    padding-top:3rem;
-    padding-bottom: 3rem;
-    padding-right: 3rem;
-    padding-left: 3rem;
+  width: 100%;
+  }
+  header a {
     color: #333;
-    
-}
-td {
-    font-size:2rem ;
-    padding-top: 2rem ;
-    padding-bottom: 2rem ;
-    padding-right: 2rem ;
-    padding-left: 2rem;  
-}
-
-.komórka:hover {
-    background-color:rgb(255, 255, 255);
-    
-}
-.obrazek {
-    width: 7.5rem;
-    height: 7.5rem;
-    padding-left: 3rem;
-    padding-right: 3rem ;
-}
-footer {
-	text-align: center;
-	background-color: #f2f2f2;
-	color: #999;
-    padding-top: 2rem;
-    margin-bottom: 0rem;
-    height:4rem;
-    font-size: 1.5rem;
-    font-family: lexend deca;
-}
-
-/* 2xl */
-@media (max-width: 1536px) {
-  .container {
-    max-width: 1280px;
-    padding-left: 0.4rem;
-    padding-right: 0.4rem;
-    margin-left: auto;
-    margin-right: auto;
+    text-decoration: none;
   }
-  header {
-    font-size: 1.8rem ;
+  
+  header a:hover {
+      color: #0077B5;
+      
   }
-  li, ul {
-    margin-left: 1.6rem;
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
-    padding-right: 1.6rem ;
-    padding-left: 1.6rem;
-  }
-  .wizytówka {
-        display: table;
-        align-items: center;
-        width: 72rem;
-        height: 34rem;
-        margin-left: auto;
-        margin-right: auto;
-        color: #333;
-        margin-bottom: 5.8REM;
-    
-        
-    }
-    .tło1 {
-        width: 72rem;
-        height: 34rem;
-        position: absolute;
-        z-index: -1;
-        border-radius: 1rem;
-        opacity: 70%;
-    }
-    h1 {
-    padding-left: 0.85rem ;
-  padding-right: 0.85rem ;
-  padding-top: 0.7rem;
-  padding-bottom: 0.5rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  border-radius: 0.7rem;
-  text-align: center;
-  font-size: 2.4rem ;
-}
-
-p {
-  margin-left: 2.8rem;
-  margin-right: 2.8rem;
-  padding-top: 1.3rem;
-  padding-bottom: 1.3rem;
-  padding-left: auto;
-  padding-right: auto;
-  font-size: 2.6rem;
-  line-height: 3.4rem;
-  letter-spacing: 0.09rem;
-  border-radius: 0.7rem;
-  font-weight: 400;
-  text-align: center;
-  margin-top: 5.2rem;
-}
-
-button {
-    margin-top: 4.3rem;
-	font-size: 1.3REM;
-	margin-left: 4.1REM;
-}
-button {
-  border-radius: 1rem;
-  border-width: 0 0 9px;
-  font-weight: 700;
-  letter-spacing: 0.12rem;
-  line-height: 1.2rem;
-  padding: 1.2rem 1.7rem;
-}
-
-.notka {
-    background-color: #FFFFFF;
-    margin-top: 3rem ;
-    margin-left: 1rem ;
-    margin-right: 1rem;
-    margin-bottom: 0rem;
-    width: 22rem ;
-    height: 20rem;
-    padding-bottom: -1rem;
-    padding-top: 1.4rem;
-    padding-left: 1.2rem;
-    padding-right: 1.2rem ;
-    border-radius: 2rem;
-    font-size: 1.4rem;
-    align-items:baseline;
-    text-align: center;
-    line-height: 2.2rem;
-    border-width: 0.5rem;
-    border-style: dashed;
-    border-color: #00a7da;
-    
-}
-
-.znak1 {
-    width: 3rem;
- 
-}
-.znak2 {
-    width: 4.5rem;
-   
-}
-.znak3 {
-    width: 3.75rem;
-    
-}
-
-.znak1, .znak2, .znak3 {
-margin-bottom: 0.4rem;
-}
-
-}
-
-/* xl */
-@media (max-width: 1280px) {
-  .container {
-    max-width: 1024px;
-    padding-left: 0.35rem;
-    padding-right: 0.35rem;
-  }
-  header {
-    font-size: 1.6rem ;
-  }
-  li, ul {
-    margin-left: 1.2rem;
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
-    padding-right: 1.2rem ;
-    padding-left: 1.2rem;
-    border-radius: 0.5rem;
-  }
-  .wizytówka {
-        display: table;
-        align-items: center;
-        width: 60rem;
-        height: 26rem;
-        margin-left: auto;
-        margin-right: auto;
-        color: #333;
-        margin-bottom: 1REM;
-    
-        
-    }
-    .tło1 {
-        width: 60rem;
-        height: 26rem;
-        position: absolute;
-        z-index: -1;
-        border-radius: 0.8rem;
-        opacity: 70%;
-    }
-    h1 {
-  padding-left: 0.70rem ;
-  padding-right: 0.70rem ;
-  padding-top: 0.8rem;
-  padding-bottom: 0.45rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 0.6rem;
-  text-align: center;
-  font-size: 2rem ;
-}
-
-p {
-  margin-left: 2.4rem;
-  margin-right: 2.4rem;
-  padding-top: 1.1rem;
-  padding-bottom: 1.1rem;
-  padding-left: auto;
-  padding-right: auto;
-  font-size: 2.2rem;
-  line-height: 2.8rem;
-  letter-spacing: 0.08rem;
-  border-radius: 0.6rem;
-  font-weight: 400;
-  text-align: center;
-  margin-top: 4.4rem;
-}
-
-button {
-    margin-top: 3rem;
-	font-size: 1.2REM;
-	margin-left: 2.4REM;
-}
-button {
-  border-radius: 1rem;
-  border-width: 0 0 8px;
-  font-weight: 700;
-  letter-spacing: 0.115rem;
-  line-height: 1.1rem;
-  padding: 1.1rem 1.5rem;
-}
-.notka {
-    background-color: #FFFFFF;
-    margin-top: 3rem ;
-    margin-left: 1rem ;
-    margin-right: 1rem;
-    margin-bottom: -1rem;
-    width: 20rem ;
-    height: 14rem;
-    padding-bottom: 0.rem;
-    padding-top: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem ;
-    border-radius: 2rem;
-    font-size: 1.1rem;
-    align-items:baseline;
-    text-align: center;
-    line-height: 1.6rem;
-    border-width: 0.5rem;
-    border-style: dashed;
-    border-color: #00a7da;
-    
-}
-
-.znak1 {
-    width: 2rem;
- 
-}
-.znak2 {
-    width: 3.25rem;
-   
-}
-.znak3 {
-    width: 2.5rem;
-    
-}
-
-.znak1, .znak2, .znak3 {
-margin-bottom: 0rem;
-}
-
-}
-
-/* lg */
-@media (max-width: 1024px) {
-  .container {
-    max-width: 768px;
-    padding-left: 0.3rem;
-    padding-right: 0.3rem;
-  }
-  header {
-    font-size: 1.4rem ;
-  }
-  li, ul {
-    margin-left: 1.0rem;
-    padding-top: 0.4rem;
-    padding-bottom: 0.4rem;
-    padding-right: 0.8rem ;
-    padding-left: 0.8rem;
-    border-radius: 0.4rem;
-  }
-  .wizytówka {
-        display: table;
-        align-items: center;
-        width: 47rem;
-        height: 24rem;
-        margin-left: auto;
-        margin-right: auto;
-        color: #333;
-        margin-bottom: 3.4REM;
-    
-        
-    }
-    .tło1 {
-        width: 47rem;
-        height: 24rem;
-        position: absolute;
-        z-index: -1;
-        border-radius: 0.6rem;
-        opacity: 70%;
-    }
-    h1 {
-  padding-left: 0.55rem ;
-  padding-right: 0.55rem ;
-  padding-top: 0.7rem;
-  padding-bottom: 0.4rem;
-  margin-top: 1.8rem;
-  margin-bottom: 1.6rem;
-  border-radius: 0.5rem;
-  text-align: center;
-  font-size: 1.4rem ;
-}
-
-p {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  padding-top: 0.9rem;
-  padding-bottom: 0.9rem;
-  padding-left: auto;
-  padding-right: auto;
-  font-size: 1.8rem;
-  line-height: 2.2rem;
-  letter-spacing: 0.07rem;
-  border-radius: 0.5rem;
-  font-weight: 400;
-  text-align: center;
-  margin-top: 3.6rem;
-}
-
-button {
-    margin-top: 3.6rem;
-	font-size: 0.9REM;
-	margin-left: 1.5REM;
-  margin-right: 1.2REM;
-}
-button {
-  border-radius: 1rem;
-  border-width: 0 0 7px;
-  font-weight: 700;
-  letter-spacing: 0.11rem;
-  line-height: 1rem;
-  padding: 1rem 1rem;
-}
-}
-
-/* md */
-@media (max-width: 768px) {
   .container {
     max-width: 640px;
     padding-left: 0.25rem;
     padding-right: 0.25rem;
   }
-  header {
-    font-size: 1.2rem ;
-  }
-  li, ul {
-    margin-left: 0.8rem;
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem;
-    padding-right: 0.6rem ;
-    padding-left: 0.6rem;
-    border-radius: 0.3rem;
-  }
   .wizytówka {
         display: table;
-        align-items: center;
         width: 40rem;
         height: 20rem;
         margin-left: auto;
@@ -755,12 +57,14 @@ button {
         
     }
     .tło1 {
-        width: 40rem;
+        width: 16rem;
         height: 20rem;
-        position: absolute;
+       float: right;
         z-index: -1;
-        border-radius: 0.4rem;
-        opacity: 70%;
+        border-radius: 4px;
+        opacity: 100%;
+        margin-left: 2rem ;
+        margin-right: 2rem ;
     }
     h1 {
   padding-left: 0.40rem ;
@@ -771,318 +75,275 @@ button {
   margin-bottom: 1.4rem;
   border-radius: 0.4rem;
   text-align: center;
-  font-size: 1.2rem ;
+  font-size: 0.8rem ;
 }
-
-p {
-  margin-left: 1.6rem;
-  margin-right: 1.6rem;
-  padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
-  padding-left: auto;
-  padding-right: auto;
+  footer {
+    bottom: 0px;
   font-size: 1.4rem;
-  line-height: 1.6rem;
-  letter-spacing: 0.06rem;
-  border-radius: 0.4rem;
-  font-weight: 400;
-  text-align: center;
-  margin-top: 2.8rem;
-}
-
-button {
-  margin-top: 3rem;
-	font-size: 0.8REM;
-	margin-left: 1.2REM;
-  margin-right: 0.6rem;
-
-}
-button {
-  border-radius: 1.3rem;
-  border-width: 0 0 8px;
-  font-weight: 700;
-  letter-spacing: 0.105rem;
-  line-height: 1rem;
-  padding: 0.8rem 0.8rem;
-}
-}
-
-/* sm */
-@media (max-width: 640px) {
-  .container {
-    max-width: 480px;
-    padding-left: 0.2rem;
-    padding-right: 0.2rem;
-  }
-  header {
-    font-size: 1.0rem ;
-  }
-  li, ul {
-    margin-left: 0.6rem;
-    padding-top: 0.1rem;
-    padding-bottom: 0.1rem;
-    padding-right: 0.4rem ;
-    padding-left: 0.4rem;
-    border-radius: 0.3rem;
-  }
-  .wizytówka {
-        display: table;
-        align-items: center;
-        width: 30rem;
-        height: 16rem;
-        margin-left: auto;
-        margin-right: auto;
-        color: #333;
-        margin-bottom: 1REM;
-    
-        
-    }
-    .tło1 {
-        width: 30rem;
-        height: 16rem;
-        position: absolute;
-        z-index: -1;
-        border-radius: 0.2rem;
-        opacity: 70%;
-    }
-    h1 {
-  padding-left: 0.25rem ;
-  padding-right: 0.25rem ;
-  padding-top: 0.5rem;
-  padding-bottom: 0.3rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 0.3rem;
-  text-align: center;
-  font-size: 1rem ;
-}
-
-p {
-  margin-left: 1.2rem;
-  margin-right: 1.2rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: auto;
-  padding-right: auto;
-  font-size: 1rem;
-  line-height: 1rem;
-  letter-spacing: 0.05rem;
-  border-radius: 0.3rem;
-  font-weight: 400;
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 0.4rem;
-}
-button {
-    margin-top: 0.8rem;
-	font-size: 0.7REM;
-	margin-left: 0.7REM;
-    ;
-}
-button {
-  border-radius: 0.9rem;
-  border-width: 0 0 6px;
-  font-weight: 700;
-  letter-spacing: 0.1rem;
-  line-height: 0.7rem;
-  padding: 0.7rem 1.2rem;
-}
-.kolumna {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-}
-}
-
-/* xs */
-@media (max-width: 480px) {
-  .container {
-    max-width: 416px;
-  }
-  header {
-    font-size: 0.9rem ;
-  }
-  li, ul {
-    margin-left: 0.4rem;
-    padding-top: 0.0rem;
-    padding-bottom: 0.0rem;
-    padding-right: 0.2rem ;
-    padding-left: 0.2rem;
-    border-radius: 0.2rem;
-  }
-  .wizytówka {
-        width: 26rem;
-        height: 14rem;
-        margin-left: auto;
-        margin-right: auto;
-        color: #333;
-        margin-bottom: 0REM;
-    
-        
-    }
-    .tło1 {
-        width: 26rem;
-        height: 14rem;
-        position: absolute;
-        z-index: -1;
-        border-radius: 0.1rem;
-        opacity: 70%;
-    }
-    h1 {
-  padding-left: 0.2rem ;
-  padding-right: 0.2rem ;
-  padding-top: 0.4rem;
-  padding-bottom: 0.25rem;
-  margin-top: 0.8rem;
-  margin-bottom: 0.8rem;
-  border-radius: 0.25rem;
-  text-align: center;
-  font-size: 1rem ;
-}
-
-p {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
-  padding-left: auto;
-  padding-right: auto;
-  font-size: 0.8rem;
-  line-height: 0.8rem;
-  letter-spacing: 0.04rem;
-  border-radius: 0.25rem;
-  font-weight: 400;
-  text-align: center;
-  margin-top: 1.6rem;
-  margin-bottom: 0.4rem;
-}
-button {
-    margin-top: 0.8rem;
-	font-size: 0.7REM;
-	margin-left: 0.4REM;
-}
-
-button {
-  border-radius: 0.9rem;
-  border-width: 0 0 6px;
-  font-weight: 700;
-  letter-spacing: 0.08rem;
-  line-height: 0.8rem;
-  padding: 0.5rem 1rem;
-}
-.kolumna {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-}
-}
-/* xxs */
-@media (max-width: 416px) {
-  .container {
-    max-width: 368px;
-    padding-left: 0rem;
-    padding-right: 0rem;
-  }
-  header {
-    font-size: 0.6rem ;
-    position: absolute;
-    display: inline-block;
-    flex-direction: row;
-    width: 100%;
-    text-align: center;
-  }
-  li, ul {
-    margin-left: 0.2rem;
-    padding-top: 0.0rem;
-    padding-bottom: 0.0rem;
-    padding-right: 0.2rem ;
-    padding-left: 0.2rem;
-    border-radius: 0.2rem;
-  }
-  .wizytówka {
-        color: #333;
-        margin-bottom: 0.2REM;
-        align-items: center;
-        display: flex
-    
-        
-    }
-    .tło1 {
-        width: 100%;
-        margin-top: 4rem;
-        height: 10rem;
-        position: absolute;
-        z-index: -1;
-        border-radius: 0.1rem;
-        opacity: 70%;
-    }
-
-    h1 {
-  padding-left: 0.15rem ;
-  padding-right: 0.15rem ;
-  padding-top: 0.35rem;
-  padding-bottom: 0.2rem;
-  margin-top: 0rem;
-  margin-bottom: 7rem;
-  border-radius: 0.2rem;
-  text-align: center;
-  font-size: 0.7rem ;
-  position: absolute;
-  z-index: 3;
-}
-
-p {
-    position: absolute;
-  margin-left: 0rem;
-  margin-right: 0rem;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
-  padding-left: auto;
-  padding-right: auto;
-  font-size: 0.8rem;
-  line-height: 1rem;
-  letter-spacing: 0.03rem;
-  border-radius: 0.2rem;
-  font-weight: 400;
-  text-align: center;
-  margin-top: 5rem;
-  margin-bottom: 6rem;
-}
-button {
-    background-color: #00a7da;
+  justify-content: space-between;
+  font-family: mulish;  
+  padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-right: 1.6rem ;
+    padding-left: 1.6rem;
     position: relative;
-    margin-top: 0.6rem;
-	font-size: 0.6REM;
-}
-button {
-border-radius: 1;
-  border-width: 0.5;
-  font-weight: 700;
-  letter-spacing: 0.06rem;
-  line-height: 0.6rem;
-  padding-left: auto;
-  padding-right: auto;
-  
-}
-.kolumna {
-    margin-top: 12rem;
-    position: absolute;
+	text-align: center;
+	background-color: #f2f2f2;
+	color: #999;
+    border-radius: 4px;
+    margin-bottom: 3rem;
+  }
+  .pracamis2 {
+    font-family: lexend deca;
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    width: 66rem;
+    margin-right: auto;
+    margin-left: auto;
+    
+   
 }
-br{ display: none;}
+.notka {
+    background-color: #FFFFFF;
+    margin-top: 1rem ;
+    margin-left: 1REM ;
+    margin-right: 1rem ;
+    margin-bottom: 2rem;
+    height: 20rem;
+    padding-bottom: -1rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem ;
+    border-radius: 1.6rem;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    border-width: 0.3rem;
+    border-style: dashed;
+    border-color: #00a7da;
+    box-shadow: rgb(2, 196, 255, 0.3) -0.6rem 0.6rem 0rem;
+    width: 20rem;
+    font-family: mulish;
+    border-radius: 4px;
+    
+}
+  .znak1 {
+    width: 2.6rem;
+ 
+}
+.znak2 {
+    width: 4rem;
+   
+}
+.znak3 {
+    width: 3.3rem;
+    
+}
+  ul{
+      font-size: 1.4rem;
+    flex-direction: row;
+    text-align: center;   
+  }
+  li {
+    list-style: none;
+      border-radius: 4px;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding-right: 1.6rem ;
+      padding-left: 1.6rem;
+    display: inline;
+    margin-left: 1rem;
+    position: relative;
+    
+    
+  }
+  li {
+      background-color: #ffffff;
+  }
+  li:hover 
+      {
+      background-color: rgb(2, 196, 255, 0.3);
+      transition: .6s;
+      }
+  
+  .logo {
+    position: absolute;
+      width: 5rem;
+      height: 5rem;
+    padding-top: 1rem;
+      padding-bottom: 1rem; 
+  }
+  .logonazwa {
+     position: absolute;
+      font-family: lexend deca;
+      font-weight: 600;
+  
+  }
+
+
+/* Styl sekcji głównej */
+main {
+	padding-top: 2.5%;
+
 }
 
 
-    </style>
+.p8 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem ;
+    padding-left: auto;
+    padding-right: auto;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    background-color: rgba(255, 255, 255, 0.85);
+    font-weight: 400;
+    font-family: mulish;
+    text-align: center;
+    display: absolute;
+    margin-bottom: 1rem;
+}
+.komórka:hover {
+    color: #00acca;
+}
+table {
+    background-color:rgb(207, 242, 253);
+    border-radius: 4px;
+    font-family: mulish;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 4rem;
+    margin-right: 1.5rem ;
+    margin-left: 1.5rem ;
+    padding-bottom: 1rem;
+	
+	
+
+}
+th {
+    font-size: 1.5rem;
+    padding-top:2rem;
+    padding-bottom: 2rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    color: #333;
+    
+}
+td, .p4 {
+    font-size:1.5rem ;
+    padding-top: 1rem ;
+    padding-bottom: 1rem ;
+    padding-right: 1rem ;
+    padding-left: 1rem;
+    font-family: mulish; 
+	 
+}
+
+
+.komórka:hover {
+    background-color:rgb(255, 255, 255);
+    
+}
+.obrazek {
+    width: 6rem;
+    height: 6rem;
+}
+      
+        .tabelka {
+            margin-left: auto;
+            margin-right: auto;
+			text-align: center;
+        }
+		.treść {
+			display:inline;
+			flex-direction: column;
+			text-align: center;
+            
+			 
+		}
+		p {
+			font-size: 1.2rem;
+            font-family: mulish;
+			
+		}
+        h1 {
+            font-family: mulish;
+            font-size: 2rem;
+        margin-top: -1rem;
+        margin-bottom: -1rem;
+			color:rgb(0, 119, 181) ;
+			font-family: mulish;
+			font-weight: 700;
+			background-color: rgb(2, 196, 255, 0.2);
+			padding-top: 1rem ;
+			padding-bottom: 1rem;
+			border-radius: 4px;
+            margin-left: auto ;
+            margin-right: auto ;
+            text-align: center;
+            width: 64rem;
+			
+				
+		}
+        
+		.podpis 
+		{
+            margin-top: -1rem;
+			font-size: 1.2rem;
+			color: #999;
+            margin-bottom: 1.3rem;
+            line-height: 0rem;
+            text-align: center;
+		}
+
+		.komórka:hover {
+			color: #00acca;
+		}
+        p2, p3 {
+            padding-top: 0.5rem;
+    padding-bottom: 0.5rem ;
+    padding-left: auto;
+    padding-right: auto;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+    font-family: mulish;
+    position: absolute;
+    width: 16rem;
+    margin-right: 6rem;
+    margin-left: 2rem;
+    margin-top: 1rem ;
+    text-align: center;
+        }
+    p3 {
+         margin-left: 22rem;
+    }
+    .strzała {
+    background-color: #0076b551;
+    border-radius: 3px;
+    font-size: 1.1rem;
+    border-style: none;
+    color: #ffffff;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    margin-left: 0.2rem;
+}
+
+.strzała:hover {
+    background-color: #4ccfff;
+    color: #0076b577;
+    border-color: #0076b5bc;
+    cursor: pointer;
+
+    }
+	
+</style>
 </head>
-    <body>
+<body>
     <header>
-		<div class="logonazwa">
-            <br><p8>PRANIE BIAŁY MIŚ</p8>
+		<div class="logo">
+			<a href="#">Logo</a>
 		</div>
 		<nav>
         
@@ -1096,206 +357,142 @@ br{ display: none;}
 			</ul>
 		</nav>
 	</header>
-<div class="container">
-    <div class="wizytówka">
-        <h1><span style="color: #0077B5; font-weight:700;">Profesjonalne</span> pranie tapicerki meblowej<br>
-            na terenie Warszawy i okolic.</h1>
-        <img class="tło1" src="Rysunki/tło5.jpg">
+	<main>
         
-                <p>Od 8 lat dbamy o czystość w waszych domach.<br>
-                    Jesteśmy dostępni 7 dni w tygodniu.<br>
-                    Sprawdź naszą ofertę i zadzwoń pod <span style="color: #0077B5;font-weight: 700;">519 551 915.</span></p>
-                    <div class="kolumna"><p1><a href='Kontakt.html'><button>ZAMÓW PRANIE</button></a></p1><p1><a href='Cennik.html'><button>SPRAWDŹ NASZE CENY</button></a></p1><p1><a href='Oferta.html'><button>DOWIEDZ SIĘ WIĘCEJ</button></a></p1></div>
-
-</div>
-
-</div>
-<div class="pracamis2">
-    <div class="notka">
-        <img src="Rysunki/kroplaikonka.png" class="znak1"><br>
-        <p4>Stosujemy metodę ekstrakcyjną, opartą na użyciu <span style="color: #0077B5; font-weight:700;">środków i
-        produktów firmy Karcher</span>, które są <span style="color: #0077B5; font-weight:700;">gwaracją</span> skutecznego <span style="color: #0077B5; font-weight:700;">usunięcia brudu oraz plam.</span></p4>
+            <h1>PRANIE TAPICERKI MEBLOWEJ WARSZAWA I OKOLICE</h1>
+            
+            
+                    <p class="p8">Od 8 lat dbamy o czystość w waszych domach.
+                        Jesteśmy dostępni 7 dni w tygodniu.<br>
+                        Sprawdź naszą ofertę i zadzwoń pod <span style="color: #0077B5;font-weight: 700;">519 551 915.</span></p>
+                        <p class="podpis">Chcesz zobaczyć więcej realizacji? Sprawdź zakładkę OFERTA <a href="Oferta.html"><button class="strzała">►</button></a></p>
+                        <div class="wizytówka"><img class="tło1" src="Rysunki/po0.jpeg"><p2>Przed praniem</p2><img class="tło1" src="Rysunki/przed0.JPG"><p3>Po praniu</p3>
+                    </div>
+<div class="treść">
+	<div class="text">
+    <div class="pracamis2">
+        <div class="notka">
+            <img src="kroplaikonka.png" class="znak1"><br>
+            <p4>Stosujemy metodę ekstrakcyjną, opartą na użyciu <span style="color: #0077B5; font-weight:700;">środków i
+            produktów firmy Karcher</span>, które są <span style="color: #0077B5; font-weight:700;">gwaracją</span> skutecznego <span style="color: #0077B5; font-weight:700;">usunięcia brudu oraz plam.</span></p4>
+        </div>
+    
+        <div class="notka">
+            <img src="ikonkamonety.png" class="znak2"><br>
+            <p4>Dajemy gwarację stałej, atrakcyjnej ceny oraz oferujemy <span style="color: #0077B5; font-weight:700;">rabaty przy każdym nastepnym praniu.</span> Sprawdź cennik, aby dowiedzieć się więcej.</p4>
+        </div>
+            
+        <div class="notka">
+            <img src="kotekikona.png" class="znak3"><br>
+            <p4>Środki, z których korzystamy nie powodują zmiany koloru mebla,
+                są <span style="color: #0077B5; font-weight:700;">bezpieczne dla dzieci, alergików oraz zwierząt.</span> Sprawdź ofertę, aby dowiedzieć sie więcej.</p4>
+        </div>
     </div>
+	<p>Sprawdź ceny prania tapicerki meblowej w Warszawie i okolicach.</p>
+    <P class="podpis"> Chcesz zamówić pranie? Sprawdź zakładkę KONTAKT <a href="Kontakt.html"><button class="strzała">►</button></a></P>
+</div></main>
 
-    <div class="notka">
-        <img src="Rysunki/ikonkamonety.png" class="znak2"><br>
-        <p4>Dajemy gwarację stałej, atrakcyjnej ceny oraz oferujemy <span style="color: #0077B5; font-weight:700;">rabaty przy każdym nastepnym praniu.</span> Sprawdź cennik, aby dowiedzieć się więcej.</p4>
-    </div>
-        
-    <div class="notka">
-        <img src="Rysunki/kotekikona.png" class="znak3"><br>
-        <p4>Środki, z których korzystamy nie powodują zmiany koloru mebla,
-            są <span style="color: #0077B5; font-weight:700;">bezpieczne dla dzieci, alergików oraz zwierząt.</span> Sprawdź ofertę, aby dowiedziec sie więcej.</p4>
-    </div>
-</div>
-<div class="podpokaz">
-<div class="carousel">
-    <div class="images fade">
-       <img class="pokaz" src="Rysunki/kolaż1.jpg">
-       </div>
-       <div class="images fade">
-          <img class="pokaz" src="Rysunki/kolaż2.jpg">
-       </div>
-       <div class="images fade">
-          <img class="pokaz" src="Rysunki/kolaż3.jpg">
-       </div>
-       <div class="images fade">
-          <img class="pokaz" src="Rysunki/kolaż4.jpg">
-       </div>
-       <div class="images fade">
-          <img class="pokaz" src="Rysunki/kolaż5.jpg">
-       </div>
+    <table class="tabelka">
+        <tr class="nagłówek">
+            <th class="ofertaprania">Oferta prania</th>
+            <th></th>
+            <th>Cena</th>
+        </tr>
+        <tr class="komórka">
+        <td><img src="ikonki mebli/Krzesło bez oparcia.png" class="obrazek"> </td>
+        <td> Krzesło bez oparcia</td>
+        <td> 10 zł</td>
+        </tr>
+        <tr class="komórka">
+        <td> <img src="ikonki mebli/Krzesło.png" class="obrazek"></td>
+        <td> Krzesło z oparciem </td>
+        <td> 15 zł</td>
+        </tr>
+        <tr class="komórka">
+        <td><img src="ikonki mebli/Krzesło biurowe.png" class="obrazek"> </td>
+        <td> Krzesło biurowe</td>
+        <td> 20 zł</td>
+        </tr>
+        <tr class="komórka">
+            <td><img src="ikonki mebli/Naroznik mały.png" class="obrazek"></td>
+            <td>Mały narożnik</td>
+            <td>120 zł</td>
+        </tr>
+        <tr class="komórka">
+            <td><img src="ikonki mebli/Naroznik duży.png" class="obrazek"></td>
+            <td>Duży narożnik</td>
+            <td>150 zł</td>
+        </tr>
+        <tr class="komórka">
+            <td><img src="ikonki mebli/Kanapa 2osobowa.png" class="obrazek"></td>
+            <td>Kanapa 2-osobowa</td>
+            <td>90 zł</td>
+        </tr>
+        <tr class="komórka">
+            <td><img src="ikonki mebli/Kanapa 3osobowa.png" class="obrazek"></td>
+            <td>Kanapa 3-osobowa</td>
+            <td>120 zł</td>
+        </tr>
+        <tr class="komórka">
+            <td><img src="ikonki mebli/Wersalka.png" class="obrazek"></td>
+            <td>Wersalka</td>
+            <td>90 zł</td>
+        </tr>
+        <tr class="komórka">
+            <td><img src="ikonki mebli/Poduszka.png" class="obrazek"></td>
+            <td>Poduszka</td>
+            <td>8 zł</td>
+        </tr>
+        <tr class="komórka">
+            <td><img src="ikonki mebli/Puf.png" class="obrazek"></td>
+            <td>Pufa, podnóżek</td>
+            <td>15 zł</td>
+        </tr>
+        <tr class="komórka">
+            <td><img src="ikonki mebli/Mały fotel.png" class="obrazek"></td>
+            <td>Mały fotel</td>
+            <td>40 zł</td>
+        </tr>
+        <tr class="komórka">
+            <td><img src="ikonki mebli/Duży fotel.png" class="obrazek"></td>
+            <td>Duży fotel</td>
+            <td>70 zł</td>
+        </tr>
+        <tr class="komórka">
+            <td><img src="ikonki mebli/Materac.png" class="obrazek"></td>
+            <td> Materac 1-osobowy</td>
+            <td>60 zł za 1 stronę<br>
+            110 zł za 2 strony</td>
+        </tr>
+        <tr class="komórka">
+            <td><img src="ikonki mebli/Materac.png" class="obrazek"></td>
+            <td> Materac 2-osobowy</td>
+            <td>70 zł za 1 stronę<br>
+                120 zł za 2 strony</td>
+        </tr>
+        <tr class="komórka">
+            <td><img src="ikonki mebli/Fotelik.png" class="obrazek"></td>
+            <td>Fotelik samochodowy</td>
+            <td>50 zł</td>
+        </tr>
+        <tr class="komórka">
+            <td><img src="ikonki mebli/Wózek dziecięcy.png" class="obrazek"></td>
+            <td>Wózek dziecięcy</td>
+            <td>60 zł</td>
+        </tr>
+        <tr class="komórka">
+            <td><img src="ikonki mebli/Dywan.png" class="obrazek"></td>
+            <td>Dywan</td>
+            <td>od 6 zł/m2 do 18 zł/m2<br>
+             cena indywidualna </td>
+        </tr>
        
-       <!-- wstecz i dalej -->
-       <a class="wstecz" onclick="plusSlides(-1)">❮</a>
-       <a class="dalej" onclick="plusSlides(1)">❯</a>
- </div>
- <br>
- 
- <!-- kropeczki-->
- <div class="kropkirazem">
-    <span class="kropka" onclick="currentSlide(1)"></span>
-    <span class="kropka" onclick="currentSlide(2)"></span>
-    <span class="kropka" onclick="currentSlide(3)"></span>
-    <span class="kropka" onclick="currentSlide(4)"></span>
-    <span class="kropka" onclick="currentSlide(5)"></span>
- </div>
-</div class="podpokaz">
-<div class="białe">
-        <table id="tabelka1" class="tabelka">
-            <tr class="nagłówek">
-                <th>Oferta prania</th>
-                <th></th>
-                <th>Cena</th>
-            </tr>
-            <tr class="komórka">
-            <td><img src="ikonki mebli/Krzesło bez oparcia.png" class="obrazek"> </td>
-            <td> Krzesło bez oparcia</td>
-            <td> 10 zł</td>
-            </tr>
-            <tr class="komórka">
-            <td> <img src="ikonki mebli/Krzesło.png" class="obrazek"></td>
-            <td> Krzesło z oparciem </td>
-            <td> 15 zł</td>
-            </tr>
-            <tr class="komórka">
-            <td><img src="ikonki mebli/Krzesło biurowe.png" class="obrazek"> </td>
-            <td> Krzesło biurowe</td>
-            <td> 20 zł</td>
-            </tr>
-            <tr class="komórka">
-                <td><img src="ikonki mebli/Naroznik mały.png" class="obrazek"></td>
-                <td>Mały narożnik</td>
-                <td>120 zł</td>
-            </tr>
-            <tr class="komórka">
-                <td><img src="ikonki mebli/Naroznik duży.png" class="obrazek"></td>
-                <td>Duży narożnik</td>
-                <td>150 zł</td>
-            </tr>
-            <tr class="komórka">
-                <td><img src="ikonki mebli/Kanapa 2osobowa.png" class="obrazek"></td>
-                <td>Kanapa 2-osobowa</td>
-                <td>90 zł</td>
-            </tr>
-            <tr class="komórka">
-                <td><img src="ikonki mebli/Kanapa 3osobowa.png" class="obrazek"></td>
-                <td>Kanapa 3-osobowa</td>
-                <td>120 zł</td>
-            </tr>
-            <tr class="komórka">
-                <td><img src="ikonki mebli/Wersalka.png" class="obrazek"></td>
-                <td>Wersalka</td>
-                <td>90 zł</td>
-            </tr>
-            <tr class="komórka">
-                <td><img src="ikonki mebli/Poduszka.png" class="obrazek"></td>
-                <td>Poduszka</td>
-                <td>8 zł</td>
-            </tr>
-            <tr class="komórka">
-                <td><img src="ikonki mebli/Puf.png" class="obrazek"></td>
-                <td>Pufa, podnóżek</td>
-                <td>15 zł</td>
-            </tr>
-            <tr class="komórka">
-                <td><img src="ikonki mebli/Mały fotel.png" class="obrazek"></td>
-                <td>Mały fotel</td>
-                <td>40 zł</td>
-            </tr>
-            <tr class="komórka">
-                <td><img src="ikonki mebli/Duży fotel.png" class="obrazek"></td>
-                <td>Duży fotel</td>
-                <td>70 zł</td>
-            </tr>
-            <tr class="komórka">
-                <td><img src="ikonki mebli/Materac.png" class="obrazek"></td>
-                <td> Materac 1-osobowy</td>
-                <td>60 zł za 1 stronę<br>
-                110 zł za 2 strony</td>
-            </tr>
-            <tr class="komórka">
-                <td><img src="ikonki mebli/Materac.png" class="obrazek"></td>
-                <td> Materac 2-osobowy</td>
-                <td>70 zł za 1 stronę<br>
-                    120 zł za 2 strony</td>
-            </tr>
-            <tr class="komórka">
-                <td><img src="ikonki mebli/Fotelik.png" class="obrazek"></td>
-                <td>Fotelik samochodowy</td>
-                <td>50 zł</td>
-            </tr>
-            <tr class="komórka">
-                <td><img src="ikonki mebli/Wózek dziecięcy.png" class="obrazek"></td>
-                <td>Wózek dziecięcy</td>
-                <td>60 zł</td>
-            </tr>
-            <tr class="komórka">
-                <td><img src="ikonki mebli/Dywan.png" class="obrazek"></td>
-                <td>Dywan</td>
-                <td>od 6 zł/m2 do 18 zł/m2<br>
-                 cena indywidualna </td>
-            </tr>
-           
-        </table>
-        
-       </div>
-</div class="container">
+    </table>
+
+</div>	
 <footer>
-    <p5> PRANIE BIAŁY MIŚ +48 519 551 915</p5>
+    <p> Pranie Biały Miś +48 519 551 915</p>
 </footer>
-<script>
-    var currentIndex = 1;
-    
-    //Show current image
-    showSlides(currentIndex);
-    
-    //Function to move Next
-    function plusSlides(n) {
-       showSlides(currentIndex += n);
-    }
-    
-    //Function to move back
-    function currentSlide(n) {
-       showSlides(currentIndex = n);
-    }
-    
-    
-    //Initiate moving of slides
-    function showSlides(n) {
-       var i;
-       var slides = document.getElementsByClassName("images");
-       var dots = document.getElementsByClassName("kropka");
-       if (n > slides.length) {currentIndex = 1}
-       if (n < 1) {currentIndex = slides.length}
-       for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-       }
-       for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace("wybrana", "");
-       }
-       slides[currentIndex-1].style.display = "block";
-       dots[currentIndex-1].className += " wybrana";
-    }
- </script>
+
 </body>
+</html>
