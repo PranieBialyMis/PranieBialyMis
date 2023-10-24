@@ -1,17 +1,20 @@
-let Declaration = require('../declaration')
+const navSlide = () => {
+    const navMobile = document.querySelector('.nav-mobile')
+    const navBar = document.querySelector('.nav-links')
+    const navLinks = document.querySelectorAll('.nav-links li')
 
-class Animation extends Declaration {
-  /**
-   * Don’t add prefixes for modern values.
-   */
-  check(decl) {
-    return !decl.value.split(/\s+/).some(i => {
-      let lower = i.toLowerCase()
-      return lower === 'reverse' || lower === 'alternate-reverse'
-    })
-  }
+    navMobile.addEventListener ('click',() => {
+        navBar.classList.toggle('nav-active')
+        navLinks.forEach((link, navbar) => {
+            if(link.style.animation){
+                link.style.animation = ""
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${navbar / 7 + 0.4}s`
+            }
+
+        });
+        navMobile.classList.toggle('closeNav')
+});
 }
 
-Animation.names = ['animation', 'animation-direction']
-
-module.exports = Animation
+navSlide();
