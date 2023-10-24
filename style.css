@@ -1,0 +1,1101 @@
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;600;700;800;900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+
+* {
+  
+    box-sizing: border-box;
+}
+
+ {
+    margin-left: ;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Mulish", sans-serif ;
+    font-weight: 400;
+    min-height: 7.5vh;
+    background-color: rgb(255, 255, 255);
+    padding: 0 2%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.nav-logo img {
+    margin-right: 0px;
+    width: 200px;
+    vertical-align: middle;
+}
+
+.nav-links {
+    display: flex;
+
+}
+.nav-links li {
+    list-style: none;
+    display: inline-block;
+    z-index: 2;
+    
+ 
+}
+
+.nav-links li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-left: 50px;
+    transition: color 0.8s ease;
+    width: 100%;
+    background-color: #f4f4f4b5;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem ;
+    padding-right: 0.8rem ;
+    padding-left: 0.8rem ;
+    border-radius: 4px;
+    z-index: 2;
+    
+}
+
+.nav-links li a:hover {
+    color: #00a7da;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+.nav-mobile div {
+    width: 25px;
+    height: 2.5px;
+    background-color: #00a7da;
+    margin: 5px;
+    transition: all 0.2s ease;
+}
+
+
+
+.wizytówka {
+    border-color: #ffffff88;
+    border-width: 0.3rem;
+    border-style: dashed;
+    border-radius: 4px;
+   background-color: #ffffff;
+    margin-top: 1rem;
+    margin-bottom: -8rem;
+    max-width: rem;
+    max-height: 20rem;
+    min-height: 6rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.4rem;
+    padding-left: 0.4rem;
+    padding-right:0.4rem; 
+    font-family: mulish;
+    font-size: 1.1rem;
+
+}
+
+.p8 {
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+
+}
+
+
+.slajdy {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: auto;
+    max-width: 28rem;
+    
+  }
+  .pokaz {
+    max-width:18rem;
+    min-width: 10rem;
+    border-radius: 0.8rem;
+  }
+  
+  /* Przyciski dalej i wstecz */
+  
+  
+  .wstecz, .dalej {
+    cursor: pointer;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.2rem;
+    padding-right: 1.3rem;
+    color: #0077B5;
+    font-weight: bold;
+    font-size: 2rem;
+    transition: 0.6s ease;
+    
+    margin-right: 0.5rem ;
+    margin-left: 0.5rem;
+    border-radius: 4px;
+    border-style: solid;
+    background-color: rgb(245, 245, 245);
+    text-align: center;
+    border-color: #00a7da00;
+    box-shadow: rgba(2, 196, 255, 0) -0.4rem 0.4rem 0rem;
+ }
+
+.wstecz:hover, .dalej:hover {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    border-radius: 4px;
+    font-size: 1.6rem ;
+    background-color:#0077B5;
+    color: white;
+    box-shadow: #00a7da00 -0.2rem 0.2rem 0rem;
+    border: none;
+}
+  
+  .kropka {
+     cursor: pointer;
+     height: 1rem;
+     width: 1rem;
+     margin: 0.5rem 0.2rem -0.4rem;
+     background-color: rgb(2, 196, 255, 0.3);
+     border-radius: 10rem;
+     display: inline-block;
+     transition: background-color 0.6s ease;
+  }
+  .wybrana, .kropka:hover {
+     background-color: #00a7da;;
+  }
+
+
+
+   .nadkartami {
+    background-color:rgb(255, 255, 255) ;
+    position: relative;
+    height:24rem ;
+    z-index: -4;
+    margin-top: -21rem;
+  } 
+
+.karta {
+    text-align: center;
+    border-color: #00a7da;
+    border-width: 0.3rem;
+    border-style: dashed;
+    border-radius: 4px;
+    box-shadow: rgb(2, 196, 255, 0.3) -0.6rem 0.6rem 0rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1rem;
+    max-width: 20rem;
+    max-height: 20rem;
+    min-height: 12rem;
+    padding-right: 0.6rem;
+    padding-left: 0.6rem;
+    padding-top: 1rem ;
+    line-height: 1.4rem;
+    font-family: mulish;
+}
+
+
+.znak1 {
+    width: 2rem;
+    margin-bottom: -0.4rem;
+ 
+}
+.znak2 {
+    width: 3.4rem;
+    margin-bottom: -0.4rem;
+   
+}
+.znak3 {
+    width: 2.8rem;
+    margin-bottom: -0.4rem;
+    
+}
+
+
+table {
+    background-color:rgb(207, 242, 253);
+    border-radius: 4px;
+    font-family: mulish;
+
+}
+
+
+table, th, td {
+    border-collapse: collapse;
+}
+
+
+th {
+    font-size: 1.2rem;
+    color: #333;
+    background-color: white;
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    
+}
+td, .p4 {
+    font-size:1rem ;
+    font-family: mulish;
+    padding: 0.4rem 0.1rem 0.4rem 0.1rem 
+  
+	 
+}
+
+.komórka:hover {
+    background-color:rgb(255, 255, 255);
+    color: #00acca;
+   
+    
+}
+.obrazek {
+    height: 3rem;
+    width: 3rem;
+    
+}
+      
+.tabelka {
+    margin-left: auto;
+    margin-right: auto;
+	text-align: center;
+     padding: 0rem;
+     margin-top: 2rem;
+     width: 100%;
+     border-radius: 4px;
+ }
+.treść {
+text-align: center;			 
+}
+
+.środek {
+    margin: 0.4rem;
+    background-color: white;
+    max-width: 6rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    
+}
+
+
+
+
+/*responsive media queries*/
+
+@media only screen and (max-width: 300px) {
+    body {
+        overflow-x: hidden;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .nav-logo {
+        transform: scale(0.8);
+        margin-left: -1.7rem;
+        width: 170px;
+        padding-right: 0.4rem;
+    }
+    
+
+        .nav-links {
+        
+        position: absolute;
+        right: 0px;
+        top: 6.5vh;
+        height: 62.5vh;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        justify-content: space-evenly;
+        padding: 5vh 0 30vh 0;
+        transform: translate(100%);
+        transition: transform 0.5s ease;
+        
+
+    }
+
+    .nav-links li a {
+        padding: 0.6rem;
+        margin-left: 0px;
+        border-color: #00a7da00;
+        background-color: rgba(221, 221, 221, 0.198);
+        border-width: 0.3rem;
+        border-style: dashed;
+        border-radius: 4px;
+        box-shadow: rgba(2, 196, 255, 0) -0.6rem 0.6rem 0rem;
+
+    }
+    
+    .slajdy {
+        background-color: rgba(255, 255, 255, 0);
+        margin-right: -0.6rem;
+        margin-left: -0.8rem;}
+        
+        .wizytówka {
+            border-color: #ffffff;
+            border-width: 0.3rem;
+            border-style: dashed;
+            border-radius: 4px;
+           background-color: #ffffff;
+            margin-top: 1rem;
+            margin-bottom: 3rem;
+            max-height: rem;
+            min-height: rem;
+            padding-top: 0.8rem;
+            padding-bottom: 0.4rem;
+            padding-left: 0.4rem;
+            padding-right:0.4rem; 
+            text-align:justify;
+            text-align: center;
+            
+        
+        }
+        
+
+    
+
+     .dalej {
+        margin-right: rem;
+        margin-left: -0.1rem;
+        
+     }
+    .wstecz {
+       margin-right: -0.1rem;
+       
+    }
+    
+
+    .środek {
+        margin-right: -2rem;
+        padding-left: 0px ;
+        padding-right: 0px;
+        font-size: 0.9rem;
+    }
+    .prawo {
+        margin-right: -2rem;
+
+        font-size: 0.8rem;
+    }
+
+    .pokaz {
+        max-width: 60%;
+    }
+  
+    .tabelka {
+        margin-left:auto;
+        margin-right: auto;
+        transform: scale(0.9);
+        transition: transform 0.5s ease;
+        margin-top: -1.4rem;
+       
+    }
+    th {
+        display: none;
+        padding: 1rem;
+   
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 999px) and (min-width: 301px ) {
+
+
+
+}
+
+@media only screen and (max-width:1020px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .slajdy {
+        max-width: 23rem ;
+        background-color: #ffffff00;
+    }
+
+    .nav-links {
+        
+        position: absolute;
+        right: 0px;
+        top: 6.5vh;
+        height: 62.5vh;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        justify-content: space-evenly;
+        padding: 5vh 0 30vh 0;
+        transform: translate(100%);
+        transition: transform 0.5s ease;
+        
+
+    }
+
+    .nav-links li a {
+        padding: 0.6rem;
+        margin-left: 0px;
+        border-color: #00a7da00;
+        background-color: rgba(221, 221, 221, 0.198);
+        border-width: 0.3rem;
+        border-style: dashed;
+        border-radius: 4px;
+        box-shadow: rgba(2, 196, 255, 0) -0.6rem 0.6rem 0rem;
+
+    }
+
+    .nav-mobile {
+        display: block;
+        cursor: pointer;
+
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+    .nav-active {
+        transform: translate(0%);
+    }
+
+
+    .wizytówka {
+        border-color: #ffffff;
+        border-width: 0.3rem;
+        border-style: dashed;
+        border-radius: 4px;
+       background-color: #ffffff;
+        margin-top: 0rem;
+        margin-bottom: 2rem;
+        max-height: 26rem;
+        min-height: 2rem;
+        padding-top: 0.8rem;
+        padding-bottom: 0.4rem;
+        padding-left: 0.4rem;
+        padding-right:0.4rem; 
+        font-size: 0.7rem;
+        text-align:justify;
+        text-align: center;
+        
+    
+    }
+    
+    .p8 {
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+    
+    }
+    
+
+.pokaz {
+    max-width: 100%;
+}
+
+.wstecz, .dalej {
+    max-width: 100%;
+}
+
+.wstecz, .dalej {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    font-weight: bold;
+    font-size: 1rem;
+  
+ }
+
+.wstecz:hover, .dalej:hover {
+    padding-top: 0.2rem;
+    padding-bottom: 0.4rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    border-radius: 2rem;
+    border-radius: 4px;
+    font-size: 1rem ;
+    background-color:#0077B5;
+    color: white;
+    border: none;
+}
+
+.karty {
+    margin-right: 0rem;
+    margin-left: 1rem ;
+
+        }
+
+        .tabelka {
+         max-width: 36rem;
+         border-radius: 4px;
+        }
+
+        .obrazek {
+            width: 4rem ;
+            height: 4rem;
+        }
+    }
+
+
+
+    
+    
+
+
+@media only screen and (min-width: 1000px ) and (max-width:1180px) {
+
+    .nadkartami {
+        background-color:rgb(255, 255, 255) ;
+       position: relative;
+        height:24rem ;
+        z-index: -4;
+       
+      }
+
+      .wizytówka {
+        background-color: #ffffff;
+        font-size: 0.9rem;
+        position: absolute;
+        z-index: -2;
+        margin-top: 3rem;
+        margin-left: 2rem;
+      }
+      .p8 {
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+      }
+
+      .start {
+        
+        width: 50%;
+        margin-right: 0rem;
+        margin-left: 34rem;
+        margin-top: 2rem;
+
+      }
+
+    
+    .nav-links li a {
+        margin-left: 18px;
+        font-size: 16px;
+    }
+    .karty   {  font-family: lexend deca;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        width: 54rem;
+        background-color: rgb(255, 255, 255);
+    
+        }
+        .karta {
+            margin-right: 1rem;
+            margin-left: 1rem ;
+            width: 16rem;
+            height: 14rem;
+        }
+
+        .komórka:hover {
+            color: #00acca;
+        }
+        table {
+            background-color:rgb(207, 242, 253);
+            border-radius: 4px;
+            font-family: mulish;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            margin-bottom: 4rem;
+            margin-right: 1.5rem ;
+            margin-left: 1.5rem ;
+            padding-bottom: 1rem;
+            
+            
+        
+        }
+        th {
+            font-size: 1.5rem;
+            padding-top:2rem;
+            padding-bottom: 2rem;
+            padding-right: 3rem;
+            padding-left: 3rem;
+            color: #333;
+            
+        }
+        td, .p4 {
+            font-size:1.5rem ;
+            padding-top: 1rem ;
+            padding-bottom: 1rem ;
+            padding-right: 1rem ;
+            padding-left: 1rem;
+            font-family: mulish; 
+             
+        }
+        
+        
+        .komórka:hover {
+            background-color:rgb(255, 255, 255);
+            
+        }
+        .obrazek {
+            width: 5rem;
+            height: 5rem;
+        }
+              
+                .tabelka {
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                    max-width: 48rem;
+                }
+                .treść {
+                    display:inline;
+                    flex-direction: column;
+                    text-align: center;
+                    
+                     
+                }
+
+                .środek {
+                    margin: 0.4rem;
+                    background-color: white;
+                    max-width: 12rem;
+                    
+                }
+   
+}
+@media only screen and (min-width: 1180px ) and (max-width:1200px) {
+
+
+    
+    .nav-links li a {
+        margin-left: 30px;
+        font-size: 18px;
+    }
+    .karty   {  font-family: lexend deca;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        text-align: center;
+        width: 60rem;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: rgb(255, 255, 255);
+        }
+        .karta {
+            margin-right: 1rem;
+            margin-left: 1rem ;
+            width: 18rem;
+            height: 13rem;
+        }
+
+        .komórka:hover {
+            color: #00acca;
+        }
+        table {
+            background-color:rgb(207, 242, 253);
+            border-radius: 4px;
+            font-family: mulish;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            margin-bottom: 4rem;
+            margin-right: 1.5rem ;
+            margin-left: 1.5rem ;
+            padding-bottom: 1rem;
+            
+            
+        
+        }
+        th {
+            font-size: 1.5rem;
+            padding-top:2rem;
+            padding-bottom: 2rem;
+            padding-right: 3rem;
+            padding-left: 3rem;
+            color: #333;
+            
+        }
+        td, .p4 {
+            font-size:1.5rem ;
+            padding-top: 1rem ;
+            padding-bottom: 1rem ;
+            padding-right: 1rem ;
+            padding-left: 1rem;
+            font-family: mulish; 
+             
+        }
+        
+        
+        .komórka:hover {
+            background-color:rgb(255, 255, 255);
+            
+        }
+        .obrazek {
+            width: 5rem;
+            height: 5rem;
+        }
+              
+                .tabelka {
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                    max-width: 48rem;
+                }
+                .treść {
+                    display:inline;
+                    flex-direction: column;
+                    text-align: center;
+                    
+                     
+                }
+
+                .środek {
+                    margin: 0.4rem;
+                    background-color: white;
+                    max-width: 12rem;
+                    
+                }
+      
+                .kropeczki {
+                    margin-left: 4.2rem;
+                }
+
+                .wizytówka {
+                    position: relative;
+                  margin-left: auto;
+                  margin-right: auto;
+                  padding-right: 10rem;
+                  margin-top: 1rem;
+                    background-color: rgb(255, 255, 255);
+                    width: 80%;
+                    transform: scale(0.8);
+                    
+            
+              }
+                .start {
+                    margin-right: auto;
+                    margin-left: auto;
+                    position: relative;
+                    margin-top: -20rem;
+                    padding-left: 49rem;
+                    
+                    width: 30%;
+                    transform: scale(0.8);
+                }
+            
+                .nadkartami {
+                    background-color:rgb(255, 255, 255);
+                   position: relative;
+                    height:20rem ;
+                    z-index: -4;
+                    margin-top: -19rem;
+                  } 
+
+
+}
+
+@media only screen and (min-width: 1200px ) and (max-width:1420px) {
+
+    .wizytówka {
+        position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      padding-right: 10rem;
+      margin-top: 1rem;
+        background-color: rgb(255, 255, 255);
+        width: 80%;
+        transform: scale(0.8);
+        
+
+  }
+    .start {
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        margin-top: -20rem;
+        padding-left: 49rem;
+        background-color: #00acca00;
+        width: 30%;
+        transform: scale(0.8);
+    }
+
+    .nadkartami {
+        background-color:rgb(255, 255, 255) ;
+       position: relative;
+        height:20rem ;
+        z-index: -4;
+        margin-top: -19rem;
+      } 
+
+    .nav-links li a {
+        margin-left: 18px;
+    }
+
+    .kropeczki {
+        margin-left: 4.2rem;
+    }
+    .karty   {  font-family: lexend deca;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    width: 66rem;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: rgb(255, 255, 255);
+        }
+        .karta {
+            margin-right: 1rem;
+            margin-left: 1rem ;
+            width: 20rem;
+            height: 13rem;
+            font-size: 17px;
+        }
+
+        .komórka:hover {
+            color: #00acca;
+        }
+        table {
+            background-color:rgb(207, 242, 253);
+            border-radius: 4px;
+            font-family: mulish;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            margin-bottom: 4rem;
+            margin-right: 1.5rem ;
+            margin-left: 1.5rem ;
+            padding-bottom: 1rem;
+            
+            
+        
+        }
+        th {
+            font-size: 1.5rem;
+            padding-top:2rem;
+            padding-bottom: 2rem;
+            padding-right: 3rem;
+            padding-left: 3rem;
+            color: #333;
+            
+        }
+        td, .p4 {
+            font-size:1.5rem ;
+            padding-top: 1rem ;
+            padding-bottom: 1rem ;
+            padding-right: 1rem ;
+            padding-left: 1rem;
+            font-family: mulish; 
+             
+        }
+        
+        
+        .komórka:hover {
+            background-color:rgb(255, 255, 255);
+            
+        }
+        .obrazek {
+            width: 5rem;
+            height: 5rem;
+        }
+              
+                .tabelka {
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                    max-width: 48rem;
+                }
+                .treść {
+                    display:inline;
+                    flex-direction: column;
+                    text-align: center;
+                    
+                     
+                }
+
+                .środek {
+                    margin: 0.4rem;
+                    background-color: white;
+                    max-width: 12rem;
+                    
+                }
+             
+}
+
+@media only screen and (min-width: 1420px ) and (max-width: 3000px) 
+
+
+{
+  .wizytówka {
+        position: relative;
+        margin-left:auto;
+        margin-right: auto;
+      max-width: 50rem;
+      padding-right: 10rem;
+      margin-top: 4rem;
+        background-color: rgb(255, 255, 255);
+        width: 60%
+        
+
+  }
+    .start {
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        margin-top: -18rem;
+        padding-left: 49rem;
+        background-color: #00acca00;
+        width: 30%;
+    }
+
+    .wstecz, .dalej {
+        cursor: pointer;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1.2rem;
+        padding-right: 1.3rem;
+        color: #0077B5;
+        font-weight: bold;
+        font-size: 2rem;
+        transition: 0.6s ease;
+        
+        margin-right: 0.5rem ;
+        margin-left: 0.5rem;
+        border-radius: 4px;
+        border-style: solid;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        border-color: #00a7da00;
+        box-shadow: rgba(2, 196, 255, 0) -0.4rem 0.4rem 0rem;
+     }
+    
+    .wstecz:hover, .dalej:hover {
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
+        border-radius: 4px;
+        font-size: 1.6rem ;
+        background-color:#0077B5;
+        color: white;
+        box-shadow: #00a7da00 -0.2rem 0.2rem 0rem;
+        border: none;
+    }
+
+    .karty   {  font-family: lexend deca;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        text-align: center;
+        width: 70rem;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: rgb(255, 255, 255);
+        }
+        .karta {
+            margin-right: 1rem;
+            margin-left: 1rem ;
+            width: 21rem;
+            height: 13rem;
+            font-size: 18px;
+            padding-right: 1rem ;
+            padding-left: 1rem;
+        }
+
+        .komórka:hover {
+            color: #00acca;
+        }
+        table {
+            background-color:rgb(207, 242, 253);
+            border-radius: 4px;
+            font-family: mulish;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            margin-bottom: 4rem;
+            margin-right: 1.5rem ;
+            margin-left: 1.5rem ;
+            padding-bottom: 1rem;
+            
+            
+        
+        }
+        th {
+            font-size: 1.5rem;
+            padding-top:2rem;
+            padding-bottom: 2rem;
+            padding-right: 3rem;
+            padding-left: 3rem;
+            color: #333;
+            
+        }
+        td, .p4 {
+            font-size:1.5rem ;
+            padding-top: 1rem ;
+            padding-bottom: 1rem ;
+            padding-right: 1rem ;
+            padding-left: 1rem;
+            font-family: mulish; 
+             
+        }
+        
+        
+        .komórka:hover {
+            background-color:rgb(255, 255, 255);
+            
+        }
+        .obrazek {
+            width: 5rem;
+            height: 5rem;
+        }
+              
+                .tabelka {
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                    max-width: 48rem;
+                }
+                .treść {
+                    display:inline;
+                    flex-direction: column;
+                    text-align: center;
+                    
+                     
+                }
+
+                .środek {
+                    margin: 0.4rem;
+                    background-color: white;
+                    max-width: 12rem;
+                    
+                }
+
+}
+
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+.closeNav .line1 {
+    transform: rotate(-45deg) translate(-5.7px, 5px);
+}
+
+.closeNav .line2 {
+    transform: translate(1000%);
+    transition: transform 0.2s ease;
+}
+
+.closeNav .line3 {
+    transform: rotate(45deg) translate(-5.7px, -5px);
+}
