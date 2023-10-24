@@ -8,10 +8,6 @@
     box-sizing: border-box;
 }
 
- {
-    margin-left: ;
-}
-
 
 nav {
     display: flex;
@@ -1093,9 +1089,11 @@ text-align: center;
 
 .closeNav .line2 {
     transform: translate(1000%);
-    transition: transform 0.2s ease;
+    transition: 0.2s ease;
 }
 
 .closeNav .line3 {
     transform: rotate(45deg) translate(-5.7px, -5px);
 }
+
+</style>
