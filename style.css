@@ -1,4 +1,3 @@
-
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;600;700;800;900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
 
@@ -8,6 +7,26 @@
     box-sizing: border-box;
 }
 
+
+.co007 {
+max-width: 50rem;
+text-align: justify;
+margin-left: auto;
+margin-right: auto;
+font-size: 1.2rem;
+font-family: Mulish;
+background-color: #ffffff;
+
+    border-color: #00a7da;
+    border-width: 0.3rem;
+    border-style: dashed;
+    border-radius: 4px;
+    padding-right: 1.6rem;
+    padding-left: 0.4rem;
+    padding-top: 0.4rem ;
+   
+    font-family: mulish;
+}
 
 nav {
     display: flex;
@@ -185,7 +204,7 @@ nav {
     border-width: 0.3rem;
     border-style: dashed;
     border-radius: 4px;
-    
+    box-shadow: rgb(2, 196, 255, 0.3) -0.6rem 0.6rem 0rem;
     margin-right: auto;
     margin-left: auto;
     margin-top: 1rem;
@@ -282,12 +301,121 @@ text-align: center;
     
 }
 
+.noweee {
+    background-color: none;
+    max-height: none;
+    min-height: none;
+    background-color: hsl(0, 0%, 100%);
+    font-size: 1.8rem;
+    font-family: Mulish;
+    font-weight: 600;
+  
+    
+}
 
+.zdjęcia {
+    width: 400px;
+    border-radius: 4px;
+    padding: 1rem;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    
+    
+   
+    
+
+}
+
+.listazdj {
+    
+   margin: 0 auto;
+   text-align: center;
+
+}
+.efekty {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    background-color: rgb(2, 196, 255, 0.3)
+    
+}
+.dopisekefekty1 {
+    background-color: #0077B5;
+    position: absolute;
+    margin-top: 0rem;
+    left: 31%;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 0.4rem ;
+    padding-top: 1rem;
+    padding-left: 0.4rem ;
+    border-radius: 0 0 4px 4px;
+    font-family: Mulish;
+}
+.dopisekefekty2 {
+    background-color: #0077B5;
+    position: absolute;
+    right: 31%;
+    margin-top: 0rem;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 0.4rem ;
+    padding-top: 1rem;
+    padding-left: 0.4rem ;
+    border-radius: 0 0 4px 4px;
+    font-family: Mulish;
+   
+}
 
 
 /*responsive media queries*/
+@media only screen and (max-width:450px) and (min-width:111px) {
 
+    .dopisekefekty1 {
+      display: none;
+    }
+    .dopisekefekty2 {
+      display: none;
+       
+    }
+    
+
+.listazdj {
+text-align: center;
+
+
+}}
+@media only screen and (max-width:1020px) and (min-width:100px) {
+
+.zdjęcia {
+max-width: 190px;
+padding: 0;
+
+}
+
+} 
 @media only screen and (max-width: 300px) {
+    .dopisekefekty1 {
+        display: none;
+      }
+      .dopisekefekty2 {
+        display: none;
+         
+      }
+    .noweee {
+        width: 100%;
+        text-align: center;
+        
+        
+        font-size: 1.4rem;
+        }
+
+        .co007 {
+           border: none;
+           margin-left: -10%;
+           font-size: 1rem;
+            }
+
     body {
         overflow-x: hidden;
         background-color: rgb(255, 255, 255);
@@ -388,11 +516,13 @@ text-align: center;
     }
   
     .tabelka {
-        margin-left:auto;
+        width: 110%;
+        margin-left: -5%;
         margin-right: auto;
         transform: scale(0.9);
         transition: transform 0.5s ease;
         margin-top: -1.4rem;
+        margin-bottom: -5rem;
        
     }
     th {
@@ -405,11 +535,37 @@ text-align: center;
 
 @media only screen and (max-width: 999px) and (min-width: 301px ) {
 
-
+    .dopisekefekty1 {
+        display: none;
+      }
+      .dopisekefekty2 {
+        display: none;
+         
+      }
+    .zdjęcia {
+        max-width: 190px;
+        padding: 0.4rem;
+        padding-top: 1.4rem;
+        padding-bottom: 1.4rem;
+        
+        }
+    .noweee {
+        width: 100%;
+        text-align: center;
+        margin-top: -2rem;
+        font-size: 1.4rem;
+        }
 
 }
 
 @media only screen and (max-width:1020px) {
+
+    .noweee {
+        width: 100%;
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 1.4rem;
+        }
     body {
         overflow-x: hidden;
     }
@@ -547,7 +703,12 @@ text-align: center;
 
 
 @media only screen and (min-width: 1000px ) and (max-width:1180px) {
-
+    .noweee {
+        width: 100%;
+        text-align: center;
+        margin-top: -2rem;
+        font-size: 1.4rem;
+        }
     .nadkartami {
         background-color:rgb(255, 255, 255) ;
        position: relative;
@@ -671,7 +832,13 @@ text-align: center;
 }
 @media only screen and (min-width: 1180px ) and (max-width:1200px) {
 
-
+    .noweee {
+     
+        width: 100%;
+        text-align: center;
+        margin-top: -2rem;
+        font-size: 1.4rem;
+        }
     
     .nav-links li a {
         margin-left: 30px;
@@ -800,7 +967,12 @@ text-align: center;
 }
 
 @media only screen and (min-width: 1200px ) and (max-width:1420px) {
-
+    .noweee {
+        width: 100%;
+        text-align: center;
+        margin-top: -2rem;
+        font-size: 1.6rem;
+        }
     .wizytówka {
         position: relative;
       margin-left: auto;
@@ -930,6 +1102,13 @@ text-align: center;
 
 
 {
+    .noweee {
+    width: 100%;
+    text-align: center;
+    margin-top: -2rem;
+    font-size: 1.8rem;
+    }
+
   .wizytówka {
         position: relative;
         margin-left:auto;
@@ -1095,5 +1274,6 @@ text-align: center;
 .closeNav .line3 {
     transform: rotate(45deg) translate(-5.7px, -5px);
 }
+
 
 </style>
