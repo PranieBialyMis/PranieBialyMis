@@ -1,3 +1,4 @@
+
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;600;700;800;900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
 
@@ -343,9 +344,9 @@ text-align: center;
     background-color: #0077B5;
     position: absolute;
     margin-top: 0rem;
-    left: 30%;
-    font-size: 2rem;
-    padding-bottom: 2rem;
+    left: 20%;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
     padding-right: 0.4rem ;
     padding-top: 1rem;
     padding-left: 0.4rem ;
@@ -355,10 +356,10 @@ text-align: center;
 .dopisekefekty2 {
     background-color: #0077B5;
     position: absolute;
-    right: 30%;
+    right: 20%;
     margin-top: 0rem;
-    font-size: 2rem;
-    padding-bottom: 2rem;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
     padding-right: 0.4rem ;
     padding-top: 1rem;
     padding-left: 0.4rem ;
@@ -367,15 +368,58 @@ text-align: center;
    
 }
 
+.opisy {
+    display: table;
+  align-items: center;
+  max-width: 50rem;
+    font-size: 1.2rem;
+	text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Mulish;
+}
+
+
+.pytania4 {
+    line-height: 1.6rem;
+    font-weight: 600;
+    background-color: rgba(2, 196, 255, 0.152);
+    padding-top: 1rem ;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    border-radius: 0.4rem;
+     
+    }
+
+    button {
+        background-color: #0076b551;
+        border-radius: 3px;
+        font-size: 1.1rem;
+        border-style: none;
+        color: #ffffff;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        
+        margin-left: 0.2rem;
+    }
+    
+    button:hover {
+        background-color: #4ccfff;
+        color: #0076b577;
+        border-color: #0076b5bc;
+        cursor: pointer;
+    }
 
 /*responsive media queries*/
 @media only screen and (max-width:450px) and (min-width:111px) {
 
     .dopisekefekty1 {
-      display: none;
+      display:none ;
     }
     .dopisekefekty2 {
-      display: none;
+      display:none ;
        
     }
     
@@ -396,10 +440,15 @@ padding: 0;
 } 
 @media only screen and (max-width: 300px) {
     .dopisekefekty1 {
-        display: none;
+        font-size: 0.6rem;
+        
       }
       .dopisekefekty2 {
-        display: none;
+        font-size: 0.6rem;
+        margin-top: 8rem;
+        
+        
+       
          
       }
     .noweee {
@@ -536,12 +585,13 @@ padding: 0;
 @media only screen and (max-width: 999px) and (min-width: 301px ) {
 
     .dopisekefekty1 {
-        display: none;
+        font-size: 0.6rem;
+        
       }
       .dopisekefekty2 {
-        display: none;
-         
-      }
+        font-size: 0.6rem;
+       ;}
+
     .zdjęcia {
         max-width: 190px;
         padding: 0.4rem;
@@ -563,7 +613,7 @@ padding: 0;
     .noweee {
         width: 100%;
         text-align: center;
-        margin-top: 2rem;
+        margin-top: 1rem;
         font-size: 1.4rem;
         }
     body {
@@ -706,7 +756,7 @@ padding: 0;
     .noweee {
         width: 100%;
         text-align: center;
-        margin-top: -2rem;
+        margin-top: rem;
         font-size: 1.4rem;
         }
     .nadkartami {
@@ -771,7 +821,7 @@ padding: 0;
             font-family: mulish;
             padding-left: 2rem;
             padding-right: 2rem;
-            margin-bottom: 4rem;
+            margin-bottom: 2rem;
             margin-right: 1.5rem ;
             margin-left: 1.5rem ;
             padding-bottom: 1rem;
@@ -836,7 +886,7 @@ padding: 0;
      
         width: 100%;
         text-align: center;
-        margin-top: -2rem;
+        margin-top: rem;
         font-size: 1.4rem;
         }
     
@@ -870,7 +920,7 @@ padding: 0;
             font-family: mulish;
             padding-left: 2rem;
             padding-right: 2rem;
-            margin-bottom: 4rem;
+            margin-bottom: 2rem;
             margin-right: 1.5rem ;
             margin-left: 1.5rem ;
             padding-bottom: 1rem;
@@ -970,7 +1020,7 @@ padding: 0;
     .noweee {
         width: 100%;
         text-align: center;
-        margin-top: -2rem;
+        margin-top: rem;
         font-size: 1.6rem;
         }
     .wizytówka {
@@ -1038,7 +1088,7 @@ padding: 0;
             font-family: mulish;
             padding-left: 2rem;
             padding-right: 2rem;
-            margin-bottom: 4rem;
+            margin-bottom: 2rem;
             margin-right: 1.5rem ;
             margin-left: 1.5rem ;
             padding-bottom: 1rem;
@@ -1105,7 +1155,7 @@ padding: 0;
     .noweee {
     width: 100%;
     text-align: center;
-    margin-top: -2rem;
+    margin-top: rem;
     font-size: 1.8rem;
     }
 
@@ -1194,7 +1244,7 @@ padding: 0;
             font-family: mulish;
             padding-left: 2rem;
             padding-right: 2rem;
-            margin-bottom: 4rem;
+            margin-bottom: 2rem;
             margin-right: 1.5rem ;
             margin-left: 1.5rem ;
             padding-bottom: 1rem;
